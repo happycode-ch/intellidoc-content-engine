@@ -1,13 +1,15 @@
 # IntelliDoc Content Engine
 ### 41-Agent Content Creation Pipeline for Claude Code
 
+**🚧 Work in Progress** - This project is under active development
+
 *Transform your ideas into exceptional content with specialized AI agents working in perfect harmony.*
 
 ---
 
-## ✨ What is IntelliDoc?
+## ✨ What is the IntelliDoc Content Engine?
 
-IntelliDoc is a sophisticated content creation system powered by 41 specialized Claude Code agents. Each agent masters a single aspect of content creation—from research and strategy to writing and distribution—delivering precision and quality that surpasses traditional approaches.
+The IntelliDoc Content Engine is a sophisticated content creation system developed by IntelliDoc, powered by 41 specialized Claude Code agents. Each agent masters a single aspect of content creation—from research and strategy to writing and distribution—delivering precision and quality that surpasses traditional approaches.
 
 **🎯 One Request, Complete Content Pipeline**
 Simply say *"Write a technical blog post about Docker"* and watch as specialized agents automatically research, plan, create, polish, and format your content across multiple platforms.
@@ -200,14 +202,18 @@ Claude Code automatically orchestrates the perfect combination of agents for you
 intellidoc-content-engine/
 ├── .claude/
 │   ├── CLAUDE.md                    # Project-level configuration
-│   └── agents/                      # Ready-to-use agent files
-│       ├── topic-scout.md
-│       ├── body-writer.md
-│       └── ... (41 total agents)
-└── cc_native_41_subagnt_cntnt_creation/
-    ├── CLAUDE.md                    # Development guidelines
-    ├── IMPLEMENTATION_GUIDE_41_AGENTS.md
-    └── [agent-definitions]/         # Source agent files
+│   └── agents/                      # Ready-to-use agent files (41 total)
+├── cc_native_41_subagnt_cntnt_creation/
+│   ├── CLAUDE.md                    # Development guidelines
+│   ├── IMPLEMENTATION_GUIDE_41_AGENTS.md
+│   └── [agent source files]         # Original agent definitions
+├── pdf-build/                        # PDF export system (experimental)
+│   ├── Makefile                     # Build automation
+│   ├── build.sh                     # Standalone build script
+│   ├── templates/                   # LaTeX templates
+│   └── output/                      # Generated PDFs
+├── LICENSE                           # MIT License
+└── README.md                         # This file
 ```
 
 ### **Agent File Format**
@@ -221,6 +227,41 @@ tools: Read, Write, WebSearch, etc.
 
 [Agent implementation...]
 ```
+
+---
+
+## 📄 PDF Export System (Experimental)
+
+### **Professional Document Generation**
+Convert your generated content to beautifully formatted PDFs with professional typography and layout.
+
+### **Quick Start**
+```bash
+# Generate PDF from markdown
+cd pdf-build/
+make pdf FILE=../your-document.md
+
+# Or use the build script
+./build.sh ../your-document.md
+```
+
+### **Features**
+- Professional typography (Source Sans Pro, Fira Code)
+- Dark syntax highlighting for code blocks
+- Book-quality layout (O'Reilly/Pragmatic style)
+- Multiple output formats (PDF, ePub)
+- Automated dependency management
+
+### **Installation**
+```bash
+# Check and install dependencies
+cd pdf-build/
+make check-deps
+make install-fonts
+make get-template
+```
+
+For detailed PDF export documentation, see [`pdf-build/README.md`](pdf-build/README.md)
 
 ---
 
@@ -274,6 +315,7 @@ Combine agents for custom workflows:
 - **📖 Implementation Guide**: [`IMPLEMENTATION_GUIDE_41_AGENTS.md`](cc_native_41_subagnt_cntnt_creation/IMPLEMENTATION_GUIDE_41_AGENTS.md)
 - **⚙️ Project Configuration**: [`.claude/CLAUDE.md`](.claude/CLAUDE.md)
 - **🔧 Development Guide**: [`cc_native_41_subagnt_cntnt_creation/CLAUDE.md`](cc_native_41_subagnt_cntnt_creation/CLAUDE.md)
+- **📄 PDF Export Guide**: [`pdf-build/README.md`](pdf-build/README.md)
 
 ---
 
@@ -307,14 +349,14 @@ MIT License - see [`LICENSE`](LICENSE) file for details.
 
 ---
 
-## 🎯 Why IntelliDoc?
+## 🎯 Why the IntelliDoc Content Engine?
 
 > *"In the world of AI agents, a specialist who does one thing perfectly beats a generalist who does many things adequately."*
 
-IntelliDoc embodies this philosophy with 41 specialists working as an orchestra, each playing their instrument perfectly to create content that exceeds what any single agent could achieve.
+The IntelliDoc Content Engine embodies this philosophy with 41 specialists working as an orchestra, each playing their instrument perfectly to create content that exceeds what any single agent could achieve.
 
 **Ready to transform your content creation?** Start with the Quick Start guide above and experience the power of specialized AI collaboration.
 
 ---
 
-*🤖 Powered by Claude Code | 🎭 41 Specialized Agents | 🚀 Ready to Deploy*
+*🤖 Powered by Claude Code | 🎭 41 Specialized Agents | 🏢 Developed by IntelliDoc | 🚀 Ready to Deploy*
