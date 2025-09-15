@@ -1,0 +1,46 @@
+# Simplified PDF Metadata - No header conflicts
+# Clean configuration without overlapping elements
+
+# Document Information
+title: "${TITLE}"
+subtitle: "${SUBTITLE}"
+author: "${AUTHOR}"
+date: "${DATE}"
+lang: en
+
+# Table of Contents
+toc: true
+toc-depth: 2
+toc-title: "Table of Contents"
+
+# Document Structure
+numbersections: true
+documentclass: report
+fontsize: 11pt
+geometry:
+  - margin=1in
+
+# Fonts (System fonts that work everywhere)
+mainfont: "DejaVu Sans"
+monofont: "DejaVu Sans Mono"
+
+# Code Highlighting
+highlight-style: breezedark
+
+# Links & Colors
+colorlinks: true
+linkcolor: black
+urlcolor: blue
+
+# Eisvogel Template Settings
+titlepage: true
+titlepage-color: "2E3440"
+titlepage-text-color: "ECEFF4"
+titlepage-rule-color: "88C0D0"
+titlepage-rule-height: 2
+toc-own-page: true
+disable-header-and-footer: false
+book: true
+
+# PDF Engine
+pdf-engine: xelatex

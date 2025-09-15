@@ -1,0 +1,97 @@
+{
+  // Markdown PDF Extension Settings for Professional Export
+  "markdown-pdf.format": "Letter",
+  "markdown-pdf.margin.top": "1in",
+  "markdown-pdf.margin.bottom": "1in",
+  "markdown-pdf.margin.left": "0.75in",
+  "markdown-pdf.margin.right": "0.75in",
+  "markdown-pdf.displayHeaderFooter": true,
+  "markdown-pdf.headerTemplate": "<div style='font-size:10px; margin-left:0.75in; margin-right:0.75in; width:100%; text-align:center;'><span style='float:left;'>Technical Documentation</span><span style='float:right;'>Professional Export</span></div>",
+  "markdown-pdf.footerTemplate": "<div style='font-size:10px; margin-left:0.75in; margin-right:0.75in; width:100%; text-align:center;'><span style='float:left;' class='date'></span><span><span class='pageNumber'></span>/<span class='totalPages'></span></span><span style='float:right;' class='title'></span></div>",
+  "markdown-pdf.highlightStyle": "monokai",
+  "markdown-pdf.breaks": false,
+  "markdown-pdf.emoji": true,
+  "markdown-pdf.printBackground": true,
+  "markdown-pdf.scale": 1,
+
+  // Custom CSS for Professional Styling
+  "markdown-pdf.styles": [
+    "https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css",
+    "${workspaceFolder}/pdf-build/custom-pdf-style.css"
+  ],
+
+  // Output Configuration
+  "markdown-pdf.outputDirectory": "${workspaceFolder}/pdf-build/output",
+  "markdown-pdf.outputDirectoryRelativePathFile": false,
+
+  // Chrome/Puppeteer Options
+  "markdown-pdf.executablePath": "",
+  "markdown-pdf.chromiumArgs": [
+    "--no-sandbox",
+    "--disable-setuid-sandbox"
+  ],
+
+  // Include/Exclude Patterns
+  "markdown-pdf.convertOnSave": false,
+  "markdown-pdf.convertOnSaveExclude": [
+    "README.md",
+    "CHANGELOG.md",
+    "**/node_modules/**",
+    "**/.*/**"
+  ],
+
+  // Table of Contents
+  "markdown-pdf.includeDefaultStyles": true,
+
+  // Mermaid Diagram Support
+  "markdown-pdf.mermaidServer": "https://unpkg.com/mermaid/dist/mermaid.min.js",
+
+  // PlantUML Support
+  "markdown-pdf.plantumlOpenMarker": "@startuml",
+  "markdown-pdf.plantumlCloseMarker": "@enduml",
+  "markdown-pdf.plantumlServer": "http://www.plantuml.com/plantuml/svg/",
+
+  // Custom Scripts for Professional PDF
+  "markdown-pdf.beforeConvert": "",
+  "markdown-pdf.afterConvert": "",
+
+  // Alternative: Markdown Extended Settings (if using that extension)
+  "markdown.extension.print.theme": "dark",
+  "markdown.extension.print.includeVscode": false,
+  "markdown.extension.print.absoluteImgPath": true,
+
+  // Markdown Preview Enhanced Settings (if using that extension)
+  "markdown-preview-enhanced.chromePath": "",
+  "markdown-preview-enhanced.enableScriptExecution": false,
+  "markdown-preview-enhanced.pdfUseGithubStyle": true,
+  "markdown-preview-enhanced.pdfPageNumbers": true,
+  "markdown-preview-enhanced.pdfLandscape": false,
+  "markdown-preview-enhanced.pdfFormat": "Letter",
+  "markdown-preview-enhanced.pdfMargin": {
+    "top": "1in",
+    "bottom": "1in",
+    "left": "0.75in",
+    "right": "0.75in"
+  },
+
+  // Terminal Integration for PDF Build
+  "terminal.integrated.env.linux": {
+    "PDF_BUILD_DIR": "${workspaceFolder}/pdf-build"
+  },
+  "terminal.integrated.env.osx": {
+    "PDF_BUILD_DIR": "${workspaceFolder}/pdf-build"
+  },
+  "terminal.integrated.env.windows": {
+    "PDF_BUILD_DIR": "${workspaceFolder}/pdf-build"
+  },
+
+  // Tasks Configuration Reference
+  "comments.openView": "never",
+
+  // File Associations
+  "files.associations": {
+    "*.yaml": "yaml",
+    "*.yml": "yaml",
+    "eisvogel.tex": "latex"
+  }
+}

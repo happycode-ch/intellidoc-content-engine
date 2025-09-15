@@ -1,0 +1,38 @@
+# Ultra-clean PDF Metadata - No header/footer customization
+# Lets Eisvogel handle all header/footer logic
+
+title: "${TITLE}"
+subtitle: "${SUBTITLE}"
+author: "${AUTHOR}"
+date: "${DATE}"
+lang: en
+
+# Basic settings
+toc: true
+toc-depth: 2
+numbersections: true
+fontsize: 11pt
+geometry: margin=1in
+
+# Use system fonts
+mainfont: "DejaVu Sans"
+monofont: "DejaVu Sans Mono"
+
+# Code highlighting
+highlight-style: breezedark
+
+# Colors
+colorlinks: true
+linkcolor: black
+urlcolor: blue
+
+# Eisvogel titlepage
+titlepage: true
+titlepage-color: "2E3440"
+titlepage-text-color: "ECEFF4"
+
+# Disable ALL custom headers to prevent conflicts
+disable-header-and-footer: true
+
+# Document class
+documentclass: article

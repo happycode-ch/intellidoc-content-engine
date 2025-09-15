@@ -1,0 +1,451 @@
+/* Professional PDF Styling for Technical Documentation */
+/* Optimized for Markdown PDF export with professional typography */
+
+/* Import Professional Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+
+/* Base Document Styling */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #2c3e50;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headers with Professional Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #1a202c;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    line-height: 1.2;
+    page-break-after: avoid;
+}
+
+h1 {
+    font-size: 28pt;
+    font-weight: 700;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 0.5em;
+    margin-top: 0;
+    page-break-before: always;
+}
+
+h1:first-child {
+    page-break-before: avoid;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: 600;
+    color: #2563eb;
+    margin-top: 1.5em;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 1.2em;
+}
+
+h4 {
+    font-size: 14pt;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+/* Paragraphs and Text */
+p {
+    margin: 1em 0;
+    text-align: justify;
+    hyphens: auto;
+}
+
+strong {
+    font-weight: 600;
+    color: #1a202c;
+}
+
+em {
+    font-style: italic;
+    color: #4b5563;
+}
+
+/* Links */
+a {
+    color: #3b82f6;
+    text-decoration: none;
+    border-bottom: 1px dotted #3b82f6;
+}
+
+a:hover {
+    color: #2563eb;
+    border-bottom-style: solid;
+}
+
+/* Code Blocks - Dark Theme */
+pre {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    padding: 1.5em;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+    margin: 1.5em 0;
+    page-break-inside: avoid;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #334155;
+}
+
+/* Inline Code */
+code {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 9pt;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    font-size: inherit;
+}
+
+/* Syntax Highlighting for Code Blocks */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+    color: #f472b6;
+    font-weight: 500;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-name,
+.hljs-type,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+    color: #84cc16;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion,
+.hljs-meta {
+    color: #64748b;
+    font-style: italic;
+}
+
+.hljs-keyword.hljs-function,
+.hljs-built_in,
+.hljs-class .hljs-title {
+    color: #60a5fa;
+}
+
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-params {
+    color: #fbbf24;
+}
+
+/* Lists */
+ul, ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin: 0.5em 0;
+    line-height: 1.6;
+}
+
+ul li::marker {
+    color: #3b82f6;
+}
+
+ol li::marker {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    font-size: 10pt;
+    page-break-inside: avoid;
+}
+
+thead {
+    background-color: #1e293b;
+    color: #f8fafc;
+}
+
+th {
+    padding: 0.75em;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #3b82f6;
+}
+
+td {
+    padding: 0.75em;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Blockquotes */
+blockquote {
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    border-left: 4px solid #3b82f6;
+    background-color: #eff6ff;
+    color: #1e40af;
+    font-style: italic;
+    page-break-inside: avoid;
+    border-radius: 0 8px 8px 0;
+}
+
+blockquote p {
+    margin: 0.5em 0;
+}
+
+blockquote p:first-child {
+    margin-top: 0;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Horizontal Rules */
+hr {
+    border: none;
+    border-top: 2px solid #e5e7eb;
+    margin: 2em 0;
+    page-break-after: avoid;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Figure Captions */
+figure {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 9pt;
+    color: #6b7280;
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+/* Alert Boxes */
+.note, .tip, .warning, .important {
+    margin: 1.5em 0;
+    padding: 1em;
+    border-radius: 8px;
+    page-break-inside: avoid;
+    position: relative;
+    padding-left: 3em;
+}
+
+.note::before, .tip::before, .warning::before, .important::before {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.note {
+    background-color: #dbeafe;
+    border: 1px solid #60a5fa;
+    color: #1e40af;
+}
+
+.note::before {
+    content: "ℹ️";
+}
+
+.tip {
+    background-color: #d1fae5;
+    border: 1px solid #34d399;
+    color: #065f46;
+}
+
+.tip::before {
+    content: "💡";
+}
+
+.warning {
+    background-color: #fed7aa;
+    border: 1px solid #fb923c;
+    color: #92400e;
+}
+
+.warning::before {
+    content: "⚠️";
+}
+
+.important {
+    background-color: #fecaca;
+    border: 1px solid #f87171;
+    color: #991b1b;
+}
+
+.important::before {
+    content: "❗";
+}
+
+/* Page Breaks and Print Optimization */
+@media print {
+    body {
+        font-size: 10pt;
+        line-height: 1.5;
+    }
+
+    h1 {
+        page-break-before: always;
+        page-break-after: avoid;
+    }
+
+    h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+
+    pre, blockquote, table, figure {
+        page-break-inside: avoid;
+    }
+
+    a {
+        color: #1e40af;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 8pt;
+        color: #6b7280;
+    }
+
+    /* Ensure code blocks print with dark background */
+    pre {
+        background-color: #1e293b !important;
+        color: #e2e8f0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Page margins */
+    @page {
+        margin: 1in;
+        size: letter;
+    }
+
+    @page :first {
+        margin-top: 0.5in;
+    }
+}
+
+/* Table of Contents Styling */
+.toc {
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 2em 0;
+    page-break-after: always;
+}
+
+.toc h2 {
+    color: #1a202c;
+    font-size: 18pt;
+    margin-top: 0;
+    border-bottom: 2px solid #3b82f6;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc ul ul {
+    padding-left: 1.5em;
+}
+
+.toc a {
+    color: #374151;
+    text-decoration: none;
+    border-bottom: none;
+    display: block;
+    padding: 0.25em 0;
+}
+
+.toc a:hover {
+    color: #3b82f6;
+    background-color: #eff6ff;
+    margin-left: -0.5em;
+    padding-left: 0.5em;
+    border-radius: 4px;
+}
+
+/* Footer and Header for PDF */
+.pdf-header {
+    font-size: 9pt;
+    color: #6b7280;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.pdf-footer {
+    font-size: 9pt;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 0.5em;
+    margin-top: 1em;
+    text-align: center;
+}

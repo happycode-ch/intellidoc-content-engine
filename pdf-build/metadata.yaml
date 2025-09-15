@@ -1,0 +1,183 @@
+# PDF Metadata Configuration
+# Professional book-quality settings for technical documentation
+
+# Document Information
+title: "The 15 Billion Message Problem: Building WebSocket Systems That Actually Scale"
+subtitle: "Production-Grade Real-Time Systems with Node.js"
+author:
+  - "Engineering Team"
+  - "IntelliDoc Content Engine"
+date: "2025"
+keywords:
+  - WebSocket
+  - Node.js
+  - Real-time systems
+  - Scalability
+  - High performance
+  - System architecture
+  - Production engineering
+subject: "Technical Documentation"
+lang: en
+rights: "© 2025 - All Rights Reserved"
+
+# Table of Contents
+toc: true
+toc-depth: 2
+toc-title: "Table of Contents"
+lot: false  # List of tables
+lof: false  # List of figures
+
+# Document Structure
+numbersections: true
+secnumdepth: 3
+top-level-division: chapter
+
+# Typography & Layout
+documentclass: report
+classoption:
+  - 11pt
+  - letterpaper
+  - twoside
+  - openright
+fontsize: 11pt
+linestretch: 1.15
+geometry:
+  - left=1in
+  - right=1in
+  - top=1in
+  - bottom=1in
+  - bindingoffset=0.2in
+
+# Fonts (Professional Technical Documentation)
+mainfont: "DejaVu Sans"
+mainfontoptions:
+  - Scale=1.0
+  - Ligatures=TeX
+sansfont: "DejaVu Sans"
+sansfontoptions:
+  - Scale=1.0
+monofont: "DejaVu Sans Mono"
+monofontoptions:
+  - Scale=0.9
+mathfont: "DejaVu Sans"
+
+# Code Highlighting
+highlight-style: breezedark
+code-block-font-size: \small
+listings: true
+listings-no-page-break: true
+
+# Links & Colors
+colorlinks: true
+linkcolor: black
+filecolor: black
+citecolor: black
+urlcolor: blue
+toccolor: black
+
+# Header & Footer
+header-includes: |
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead{}
+  \fancyhead[LE,RO]{\thepage}
+  \fancyhead[LO]{\rightmark}
+  \fancyhead[RE]{\leftmark}
+  \fancyfoot{}
+  \fancyfoot[C]{\footnotesize WebSocket Systems at Scale}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+
+  \usepackage{listings}
+  \usepackage{color}
+  \definecolor{codebg}{RGB}{39,40,34}
+  \definecolor{codefg}{RGB}{248,248,242}
+
+  \lstset{
+    backgroundcolor=\color{codebg},
+    basicstyle=\color{codefg}\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    frame=single,
+    framerule=0pt,
+    framexleftmargin=3pt,
+    xleftmargin=3pt,
+    xrightmargin=3pt
+  }
+
+  \usepackage{titlesec}
+  \titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries}
+    {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+  \titlespacing*{\chapter}{0pt}{50pt}{40pt}
+
+  \usepackage[most]{tcolorbox}
+  \newtcolorbox{notebox}{
+    colback=blue!5!white,
+    colframe=blue!75!black,
+    title=Note,
+    fonttitle=\bfseries
+  }
+
+  \newtcolorbox{warningbox}{
+    colback=yellow!5!white,
+    colframe=yellow!75!black,
+    title=Warning,
+    fonttitle=\bfseries
+  }
+
+  \newtcolorbox{tipbox}{
+    colback=green!5!white,
+    colframe=green!75!black,
+    title=Tip,
+    fonttitle=\bfseries
+  }
+
+# Book Metadata
+book: true
+titlepage: true
+titlepage-color: "2E3440"
+titlepage-text-color: "ECEFF4"
+titlepage-rule-color: "88C0D0"
+titlepage-rule-height: 2
+titlepage-background: ""
+page-background: ""
+page-background-opacity: 1.0
+
+# Logo/Cover Settings (optional)
+# logo: "cover-logo.png"
+# logo-width: 200
+# cover-image: "cover.png"
+
+# Eisvogel Template Specific
+caption-justification: centering
+toc-own-page: true
+listings-disable-line-numbers: false
+disable-header-and-footer: false
+table-use-row-colors: true
+code-block-font-size: \footnotesize
+
+# Chapter Quote (optional)
+# epigraph: |
+#   "Real-time systems don't scale by accident. They scale by design."
+#   --- Production Engineering Wisdom
+
+# PDF Engine Settings
+pdf-engine: xelatex
+pdf-engine-opt:
+  - "-shell-escape"
+
+# Bibliography (if needed)
+# bibliography: references.bib
+# csl: ieee.csl
+
+# Index
+# makeindex: true
