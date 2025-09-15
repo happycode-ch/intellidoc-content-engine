@@ -1,7 +1,32 @@
 # 41-Agent Content Creation Module
 
 ## Module Purpose
-This directory contains the 41 specialized agent definitions that comprise the content creation pipeline. Each agent follows Anthropic's single-responsibility principle and is optimized for specific content creation tasks.
+Source directory for 41 specialized content agents plus the `content-pipeline-orchestrator` that coordinates intelligent agent subset selection based on content type and requirements.
+
+## Orchestration Strategy
+
+### Content-Pipeline-Orchestrator
+The master orchestrator (Opus-powered) analyzes content requests and selects optimal agent subsets:
+- **Blog posts**: 6-8 agents for focused content
+- **Tutorials**: 20-25 agents for comprehensive coverage
+- **Social media**: 3-4 distribution agents
+- **Whitepapers**: 15-20 research and content agents
+
+### Content Assembly Solution
+**NEW: `content-assembler` agent** consolidates all fragments:
+- Merges intro, body, conclusion, code examples into single document
+- Maintains consistent formatting and flow
+- Generates publication-ready deliverables
+- Handles all content types (blog, tutorial, news, whitepaper, social)
+
+### Specialized Orchestrators
+Six content-type orchestrators in `orchestration/` directory:
+- `blog-post-orchestrator` - Technical blog posts (1500-3000 words)
+- `tutorial-orchestrator` - Step-by-step guides with exercises
+- `news-orchestrator` - Rapid news articles (<30 min)
+- `social-media-orchestrator` - Platform-specific social content
+- `whitepaper-orchestrator` - Authoritative long-form (5000-10000 words)
+- `series-orchestrator` - Multi-part content series
 
 ## Agent Architecture
 
@@ -109,225 +134,85 @@ Each agent has **minimal necessary tools**:
    - `model`: Based on complexity
    - `tools`: Absolute minimum required
 
-### Agent Naming Conventions
+### Agent Naming Convention
+`[function]-[role].md` (e.g., `fact-verifier.md`, `body-writer.md`)
 
-**Pattern**: `[function]-[role].md`
+## Testing Workflow
 
-**Examples**:
-- `fact-verifier.md` (function: fact, role: verifier)
-- `code-example-writer.md` (function: code-example, role: writer)
-- `grammar-checker.md` (function: grammar, role: checker)
-
-**Requirements**:
-- Lowercase only
-- Hyphen separated
-- Descriptive of single function
-- Maximum 3 words total
-
-## Local Development Workflow
-
-### Testing Individual Agents
-
-1. **Syntax Validation**:
-   ```bash
-   # Check YAML frontmatter
-   head -10 [agent-name].md | grep -E "^(name|description|model|tools):"
-   ```
-
-2. **Content Review**:
-   ```bash
-   # Check for required sections
-   grep -E "^## (Core Function|Input|Process|Output|Constraints)" [agent-name].md
-   ```
-
-3. **Integration Test**:
-   ```bash
-   # Copy to active agents
-   cp [agent-name].md ~/.claude/agents/
-
-   # Verify Claude can see it
-   /agents | grep [agent-name]
-   ```
-
-### Agent Quality Checklist
-
-**Before Committing Changes**:
-- [ ] YAML frontmatter is valid
-- [ ] Single responsibility is clear
-- [ ] Model selection is appropriate
-- [ ] Tools are minimal necessary
-- [ ] Process steps are actionable
-- [ ] Constraints are specific
-- [ ] Examples are concrete
-- [ ] No security vulnerabilities
-
-### Pipeline Orchestration Testing
-
-1. **Phase Testing**:
-   ```bash
-   # Test related agents in sequence
-   /agent topic-scout
-   "Find trending topics in [domain]"
-
-   /agent source-gatherer
-   "Gather sources for [topic from scout]"
-   ```
-
-2. **Full Pipeline Test**:
-   ```
-   "Create a comprehensive technical article about [topic]"
-   ```
-   Monitor which agents activate automatically.
-
-## Agent Specialization Patterns
-
-### Research Agents (Phase 1)
-- **Input**: Topic or domain
-- **Process**: External source gathering
-- **Output**: Structured data/sources
-- **Tools**: WebSearch, WebFetch
-
-### Content Creation Agents (Phase 3)
-- **Input**: Research + outline
-- **Process**: Content generation
-- **Output**: Formatted text
-- **Tools**: Read, Write
-
-### Quality Assurance Agents (Phase 6)
-- **Input**: Draft content
-- **Process**: Review/correction
-- **Output**: Improved content
-- **Tools**: Read, Write (minimal)
-
-### Distribution Agents (Phase 8)
-- **Input**: Final content
-- **Process**: Format adaptation
-- **Output**: Platform-specific content
-- **Tools**: Read, Write
-
-## Agent Interaction Patterns
-
-### Sequential Handoffs
-```
-research → planning → creation → quality → distribution
-```
-
-### Parallel Processing
-```
-Multiple research agents → Content synthesizer
-Multiple QA agents → Final validator
-```
-
-### Error Handling
-```
-Agent fails → Fallback to manual
-Missing input → Request clarification
-Invalid output → Re-run with corrections
-```
-
-## Maintenance Guidelines
-
-### Regular Reviews
-- **Weekly**: Check agent performance logs
-- **Monthly**: Review and update descriptions
-- **Quarterly**: Audit tool permissions
-
-### Version Control
+### Orchestrator Testing
 ```bash
-# Tag stable agent sets
-git tag -a "agents-v1.0" -m "Stable 41-agent set"
+# Test specialized orchestrators with content-assembler
+/agent blog-post-orchestrator
+"Create a technical blog post about Docker"
 
-# Create feature branches for agent updates
-git checkout -b "update-grammar-checker"
+# Verify content assembly in tutorials
+/agent tutorial-orchestrator
+"Create comprehensive tutorial on Kubernetes"
+
+# Test rapid assembly for news
+/agent news-orchestrator
+"Breaking news about AI announcement"
 ```
 
-### Performance Monitoring
-Track these metrics:
-- Agent selection accuracy
-- Task completion rates
-- Model usage efficiency
-- Tool access patterns
-
-## Advanced Techniques
-
-### Agent Composition
+### Individual Agent Testing
 ```bash
-# Use multiple agents for complex tasks
-/agent outline-builder
-/agent intro-writer
-/agent body-writer
-/agent conclusion-writer
+# Copy to agents directory
+cp [agent-name].md ~/.claude/agents/
+
+# Test specific agent
+/agent [agent-name]
 ```
 
-### Custom Workflows
+## Phase Specializations
+
+**Phases 1-2**: Research & Strategy (WebSearch, WebFetch)
+**Phase 3**: Core Content Creation (Read, Write)
+**Phases 4-5**: Technical & Tutorial (Read, Write, Bash)
+**Phase 6**: Quality Assurance (Read, Write minimal)
+**Phases 7-8**: Visual & Distribution (Read, Write)
+**Phase 9**: Analysis & Improvement (Read only)
+
+## Orchestration Patterns
+
+**Sequential**: Research → Planning → Creation → QA → Distribution
+**Parallel**: Multiple QA agents run simultaneously
+**Optimized**: Orchestrator selects minimal subset for content type
+**Fallback**: Orchestrator handles agent failures gracefully
+
+## Maintenance
+
+### Agent Updates
+1. Always backup: `cp agent.md agent.md.backup`
+2. Test changes in isolation
+3. Verify orchestrator compatibility
+4. Update both source and deployed versions
+
+
+## Security Constraints
+- No access to sensitive files
+- Minimal tool permissions per agent
+- Orchestrator validates all agent outputs
+- Code review required for Opus agents and Bash tools
+
+## File References
+- **Project Context**: `@../.claude/CLAUDE.md`
+- **Orchestrator**: `.claude/agents/content-pipeline-orchestrator.md`
+- **Implementation**: `IMPLEMENTATION_GUIDE_41_AGENTS.md`
+
+## Quick Reference
+
+### Using the System
 ```bash
-# Create domain-specific agent chains
-# Technical tutorial sequence
-/agent step-sequencer → /agent code-example-writer → /agent exercise-designer
+# For any content creation task
+/agent content-pipeline-orchestrator
+"[Your content request]"
 ```
 
-### Agent Debugging
-```bash
-# Test agent in isolation
-/agent [name]
-"Simple test case"
-
-# Check agent selection
-"[Complex request]"
-# Monitor which agents activate
-```
-
-## Security & Safety
-
-### Agent Constraints
-- **NO** access to sensitive files
-- **NO** arbitrary code execution
-- **NO** external API calls (except research agents)
-- **VALIDATE** all inputs and outputs
-
-### Code Review Requirements
-Changes to these agents require review:
-- `body-writer.md` (Opus model)
-- Any agent with `Bash` tools
-- Research agents with web access
-
-## Integration with Project Architecture
-
-### File References
-- Project overview: `@../.claude/CLAUDE.md`
-- Implementation guide: `@./IMPLEMENTATION_GUIDE_41_AGENTS.md`
-- Agent directory: This folder
-
-### Deployment
-```bash
-# Install all agents
-cp *.md ~/.claude/agents/
-
-# Or project-specific installation
-mkdir -p .claude/agents/
-cp *.md .claude/agents/
-```
-
-## Troubleshooting
-
-### Agent Not Triggering
-1. Check agent name matches filename
-2. Verify YAML frontmatter syntax
-3. Confirm agent is in Claude's agents directory
-4. Try explicit invocation: `/agent [name]`
-
-### Wrong Agent Selected
-1. Review description keywords
-2. Check for description overlap
-3. Be more specific in request
-4. Use explicit agent selection
-
-### Agent Performance Issues
-1. Review model selection (haiku vs sonnet vs opus)
-2. Optimize prompt clarity
-3. Reduce tool dependencies
-4. Split complex agents into simpler ones
+### Troubleshooting
+- **Wrong output format**: Orchestrator handles consolidation
+- **Too many files**: Expected - orchestrator manages this
+- **Slow execution**: Trade-off for quality, orchestrator optimizes
 
 ---
 
-*This module represents the core intelligence of the content engine - 41 specialized agents working in harmony to create exceptional content.*
+*41 specialized agents + intelligent orchestration = exceptional content at scale*
