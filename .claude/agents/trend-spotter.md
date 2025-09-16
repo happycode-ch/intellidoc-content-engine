@@ -1,7 +1,7 @@
 ---
 name: trend-spotter
 description: Identify performance patterns in content metrics
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

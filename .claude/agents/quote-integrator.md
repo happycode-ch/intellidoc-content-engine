@@ -1,7 +1,7 @@
 ---
 name: quote-integrator
 description: Incorporate expert quotes and citations into content
-model: haiku
+model: sonnet
 tools: Read, Write
 ---
 

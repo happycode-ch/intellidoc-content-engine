@@ -1,7 +1,7 @@
 ---
 name: audience-profiler
 description: Define target audience characteristics and needs
-model: sonnet
+model: opus
 tools: Read
 ---
 

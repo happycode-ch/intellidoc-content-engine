@@ -1,7 +1,7 @@
 ---
 name: style-editor
 description: Ensure brand voice consistency across content
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

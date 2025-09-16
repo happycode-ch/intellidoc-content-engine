@@ -1,7 +1,7 @@
 ---
 name: twitter-formatter
 description: Create Twitter/X threads from content
-model: haiku
+model: opus
 tools: Read, Write
 ---
 

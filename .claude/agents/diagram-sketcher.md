@@ -1,7 +1,7 @@
 ---
 name: diagram-sketcher
 description: Create technical diagram specifications
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: linkedin-adapter
 description: Format content for LinkedIn posts
-model: haiku
+model: opus
 tools: Read, Write
 ---
 

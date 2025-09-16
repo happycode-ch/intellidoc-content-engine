@@ -1,7 +1,7 @@
 ---
 name: instagram-packager
 description: Create Instagram carousel content
-model: haiku
+model: opus
 tools: Read, Write
 ---
 

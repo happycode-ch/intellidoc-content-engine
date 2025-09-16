@@ -1,7 +1,7 @@
 ---
 name: link-validator
 description: Verify all links and references are functional
-model: haiku
+model: sonnet
 tools: Read, WebFetch
 ---
 

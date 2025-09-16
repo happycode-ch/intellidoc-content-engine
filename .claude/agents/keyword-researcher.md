@@ -1,7 +1,7 @@
 ---
 name: keyword-researcher
 description: Identify SEO keywords and search opportunities
-model: haiku
+model: sonnet
 tools: WebSearch, Read
 ---
 

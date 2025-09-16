@@ -1,7 +1,7 @@
 ---
 name: chart-designer
 description: Specify data visualizations and chart types
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

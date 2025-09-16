@@ -1,7 +1,7 @@
 ---
 name: metrics-collector
 description: Gather engagement data from published content
-model: haiku
+model: sonnet
 tools: Read, Bash
 ---
 

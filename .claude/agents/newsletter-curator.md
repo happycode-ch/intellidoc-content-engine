@@ -1,7 +1,7 @@
 ---
 name: newsletter-curator
 description: Format content for email newsletters
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

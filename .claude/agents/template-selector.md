@@ -1,7 +1,7 @@
 ---
 name: template-selector
 description: Choose appropriate content templates based on type
-model: haiku
+model: sonnet
 tools: Read
 ---
 

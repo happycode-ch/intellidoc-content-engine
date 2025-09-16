@@ -1,7 +1,7 @@
 ---
 name: thumbnail-creator
 description: Design eye-catching thumbnails for content
-model: haiku
+model: opus
 tools: Read, Write
 ---
 

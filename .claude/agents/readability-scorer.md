@@ -1,7 +1,7 @@
 ---
 name: readability-scorer
 description: Assess and improve content clarity and accessibility
-model: haiku
+model: sonnet
 tools: Read, Write
 ---
 

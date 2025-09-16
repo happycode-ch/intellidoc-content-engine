@@ -1,7 +1,7 @@
 ---
 name: flow-optimizer
 description: Improve content structure and readability flow
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

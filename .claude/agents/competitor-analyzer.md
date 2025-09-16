@@ -1,7 +1,7 @@
 ---
 name: competitor-analyzer
 description: Analyze competing content to identify gaps and opportunities
-model: sonnet
+model: opus
 tools: WebSearch, WebFetch, Read
 ---
 

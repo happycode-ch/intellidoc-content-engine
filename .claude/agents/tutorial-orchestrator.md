@@ -1,7 +1,7 @@
 ---
 name: tutorial-orchestrator
 description: Orchestrates step-by-step tutorial creation with exercises and solutions
-model: sonnet
+model: opus
 tools: Read, Write, Bash
 ---
 

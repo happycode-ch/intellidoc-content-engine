@@ -1,7 +1,7 @@
 ---
 name: content-atomizer
 description: Extract key points from long-form content for reuse
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

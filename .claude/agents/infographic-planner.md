@@ -1,7 +1,7 @@
 ---
 name: infographic-planner
 description: Design infographic layouts and visual hierarchy
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

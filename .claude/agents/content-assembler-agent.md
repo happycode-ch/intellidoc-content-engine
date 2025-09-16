@@ -1,7 +1,7 @@
 ---
 name: content-assembler
 description: Consolidates all content fragments from pipeline agents into final polished deliverable
-model: haiku
+model: opus
 tools: Read, Write
 ---
 

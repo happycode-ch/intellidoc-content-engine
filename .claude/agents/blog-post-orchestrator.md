@@ -1,7 +1,7 @@
 ---
 name: blog-post-orchestrator
 description: Orchestrates technical blog post creation (1500-3000 words) with code examples and SEO optimization
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

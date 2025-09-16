@@ -1,7 +1,7 @@
 ---
 name: code-example-writer
 description: Create working code snippets for technical articles
-model: sonnet
+model: opus
 tools: Read, Write, Bash
 ---
 

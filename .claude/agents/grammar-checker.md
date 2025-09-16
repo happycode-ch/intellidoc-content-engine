@@ -1,7 +1,7 @@
 ---
 name: grammar-checker
 description: Review grammar and spelling in content
-model: haiku
+model: sonnet
 tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: conclusion-writer
 description: Create effective closings with clear calls-to-action
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: fact-verifier
 description: Validate claims, statistics, and technical accuracy
-model: sonnet
+model: opus
 tools: WebSearch, WebFetch
 ---
 

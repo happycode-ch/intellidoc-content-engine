@@ -1,7 +1,7 @@
 ---
 name: ai-prompt-engineer
 description: Create detailed prompts for AI image generation
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: api-documenter
 description: Write technical API documentation with examples
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

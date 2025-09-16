@@ -1,7 +1,7 @@
 ---
 name: body-writer
 description: Write main content sections with examples and evidence
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

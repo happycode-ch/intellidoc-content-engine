@@ -1,7 +1,7 @@
 ---
 name: command-demonstrator
 description: Show CLI and terminal command examples
-model: haiku
+model: sonnet
 tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: exercise-designer
 description: Create practice problems for tutorials
-model: sonnet
+model: opus
 tools: Read, Write
 ---
 

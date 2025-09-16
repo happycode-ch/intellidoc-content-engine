@@ -1,7 +1,7 @@
 ---
 name: social-media-orchestrator
 description: Transform existing content into platform-optimized social posts
-model: haiku
+model: opus
 tools: Read, Write
 ---
 
