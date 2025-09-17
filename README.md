@@ -1,5 +1,5 @@
 # IntelliDoc Content Engine
-### 41-Agent Content Creation Pipeline for Claude Code
+### 54-Agent Content Creation Pipeline for Claude Code (48 Core + 6 Swiss Localization)
 
 **🚧 Work in Progress** - This project is under active development
 
@@ -9,7 +9,7 @@
 
 ## ✨ What is the IntelliDoc Content Engine?
 
-The IntelliDoc Content Engine is a sophisticated content creation system developed by IntelliDoc, powered by 41 specialized Claude Code agents. Each agent masters a single aspect of content creation—from research and strategy to writing and distribution—delivering precision and quality that surpasses traditional approaches.
+The IntelliDoc Content Engine is a sophisticated content creation system developed by IntelliDoc, powered by 54 specialized Claude Code agents (48 core + 6 Swiss localization). Each agent masters a single aspect of content creation—from research and strategy to writing and distribution—delivering precision and quality that surpasses traditional approaches.
 
 **🎯 One Request, Complete Content Pipeline**
 Simply say *"Write a technical blog post about Docker"* and watch as specialized agents automatically research, plan, create, polish, and format your content across multiple platforms.
@@ -33,7 +33,7 @@ cp .claude/agents/*.md your-project/.claude/agents/
 # In Claude Code
 /agents
 ```
-You should see all 41 agents listed.
+You should see all 54 agents listed.
 
 ### 3. Create Your First Content
 ```
@@ -43,7 +43,7 @@ Claude Code automatically orchestrates the perfect combination of agents for you
 
 ---
 
-## 🎭 The 41 Specialists
+## 🎭 The 54 Specialists
 
 ### 📊 **Phase 1: Research & Discovery** *(5 agents)*
 - `topic-scout` - Discover trending topics
@@ -200,20 +200,33 @@ Claude Code automatically orchestrates the perfect combination of agents for you
 ### **Project Structure**
 ```
 intellidoc-content-engine/
-├── .claude/
-│   ├── CLAUDE.md                    # Project-level configuration
-│   └── agents/                      # Ready-to-use agent files (41 total)
-├── cc_native_41_subagnt_cntnt_creation/
+├── docs/                            # 📚 Comprehensive documentation
+│   ├── README.md                    # Documentation index
+│   ├── AGENT_MODEL_OPTIMIZATION_GUIDE.md
+│   ├── architecture/                # Technical guides & best practices
+│   ├── orchestration/               # Agent coordination specs
+│   └── swiss-business/              # Swiss localization resources
+├── agents/                          # 🤖 Agent definitions (source of truth)
+│   ├── README.md                    # Agent system overview
 │   ├── CLAUDE.md                    # Development guidelines
-│   ├── IMPLEMENTATION_GUIDE_41_AGENTS.md
-│   └── [agent source files]         # Original agent definitions
-├── pdf-build/                        # PDF export system (experimental)
-│   ├── Makefile                     # Build automation
-│   ├── build.sh                     # Standalone build script
-│   ├── templates/                   # LaTeX templates
-│   └── output/                      # Generated PDFs
-├── LICENSE                           # MIT License
-└── README.md                         # This file
+│   ├── [54 agent files]             # Core agent definitions
+│   ├── orchestration/               # 7 orchestrator agents
+│   └── language_agents/             # 6 Swiss localization agents
+├── scripts/                         # 🛠️ Utilities & automation
+│   ├── content-management/          # Content archiving & setup
+│   ├── development/                 # Development utilities
+│   └── pdf-build/                   # PDF export system
+├── content/                         # 📄 Generated content output
+│   ├── blog/                        # Blog posts
+│   ├── tutorials/                   # Step-by-step guides
+│   ├── social/                      # Social media content
+│   ├── swiss/                       # Swiss localized content
+│   └── .archive/                    # Archived content batches
+├── .claude/                         # ⚙️ Claude Code configuration
+│   ├── CLAUDE.md                    # Project configuration
+│   └── agents/ → ../agents/         # Symlinks to agent definitions
+├── LICENSE                          # MIT License
+└── README.md                        # This file
 ```
 
 ### **Agent File Format**
@@ -312,10 +325,12 @@ Combine agents for custom workflows:
 
 ## 📚 Documentation
 
-- **📖 Implementation Guide**: [`IMPLEMENTATION_GUIDE_41_AGENTS.md`](cc_native_41_subagnt_cntnt_creation/IMPLEMENTATION_GUIDE_41_AGENTS.md)
+- **📚 Documentation Hub**: [`docs/README.md`](docs/README.md)
 - **⚙️ Project Configuration**: [`.claude/CLAUDE.md`](.claude/CLAUDE.md)
-- **🔧 Development Guide**: [`cc_native_41_subagnt_cntnt_creation/CLAUDE.md`](cc_native_41_subagnt_cntnt_creation/CLAUDE.md)
-- **📄 PDF Export Guide**: [`pdf-build/README.md`](pdf-build/README.md)
+- **🔧 Agent System Guide**: [`agents/README.md`](agents/README.md)
+- **⚡ Model Optimization**: [`docs/AGENT_MODEL_OPTIMIZATION_GUIDE.md`](docs/AGENT_MODEL_OPTIMIZATION_GUIDE.md)
+- **🛠️ Scripts & Utilities**: [`scripts/`](scripts/)
+- **📄 PDF Export Guide**: [`scripts/pdf-build/README.md`](scripts/pdf-build/README.md)
 
 ---
 
