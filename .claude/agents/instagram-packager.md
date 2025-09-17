@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/instagram-packager.md
+../../agents/instagram-packager.md

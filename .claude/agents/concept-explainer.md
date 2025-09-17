@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/concept-explainer.md
+../../agents/concept-explainer.md

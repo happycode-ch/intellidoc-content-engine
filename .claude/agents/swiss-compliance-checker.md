@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/language_agents/swiss-compliance-checker.md
+../../agents/language_agents/swiss-compliance-checker.md

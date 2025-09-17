@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/api-documenter.md
+../../agents/api-documenter.md

@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/metrics-collector.md
+../../agents/metrics-collector.md

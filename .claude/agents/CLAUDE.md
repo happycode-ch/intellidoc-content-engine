@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/CLAUDE.md
+../../agents/CLAUDE.md

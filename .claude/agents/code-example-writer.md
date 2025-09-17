@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/code-example-writer.md
+../../agents/code-example-writer.md

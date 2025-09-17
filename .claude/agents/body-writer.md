@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/body-writer.md
+../../agents/body-writer.md

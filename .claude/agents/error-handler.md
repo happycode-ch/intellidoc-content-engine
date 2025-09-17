@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/error-handler.md
+../../agents/error-handler.md

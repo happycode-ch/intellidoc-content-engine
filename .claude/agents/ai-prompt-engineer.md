@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/ai-prompt-engineer.md
+../../agents/ai-prompt-engineer.md

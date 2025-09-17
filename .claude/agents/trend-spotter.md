@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/trend-spotter.md
+../../agents/trend-spotter.md

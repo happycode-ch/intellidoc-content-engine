@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/step-sequencer.md
+../../agents/step-sequencer.md

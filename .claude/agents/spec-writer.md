@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/spec-writer.md
+../../agents/spec-writer.md

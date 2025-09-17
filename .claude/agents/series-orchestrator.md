@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/orchestration/series-orchestrator.md
+../../agents/orchestration/series-orchestrator.md

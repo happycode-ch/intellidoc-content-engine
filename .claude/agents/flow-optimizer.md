@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/flow-optimizer.md
+../../agents/flow-optimizer.md

@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/chart-designer.md
+../../agents/chart-designer.md

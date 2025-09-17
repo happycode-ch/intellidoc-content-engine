@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/style-editor.md
+../../agents/style-editor.md

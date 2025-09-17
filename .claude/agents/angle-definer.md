@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/angle-definer.md
+../../agents/angle-definer.md

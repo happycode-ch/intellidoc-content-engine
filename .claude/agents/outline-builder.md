@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/outline-builder.md
+../../agents/outline-builder.md

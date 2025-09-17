@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/thumbnail-creator.md
+../../agents/thumbnail-creator.md

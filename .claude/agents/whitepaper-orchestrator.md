@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/orchestration/whitepaper-orchestrator.md
+../../agents/orchestration/whitepaper-orchestrator.md

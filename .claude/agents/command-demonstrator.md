@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/command-demonstrator.md
+../../agents/command-demonstrator.md

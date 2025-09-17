@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/intro-writer.md
+../../agents/intro-writer.md

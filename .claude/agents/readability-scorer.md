@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/readability-scorer.md
+../../agents/readability-scorer.md

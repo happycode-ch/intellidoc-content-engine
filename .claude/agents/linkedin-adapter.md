@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/linkedin-adapter.md
+../../agents/linkedin-adapter.md

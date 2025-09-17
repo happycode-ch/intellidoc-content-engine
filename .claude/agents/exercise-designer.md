@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/exercise-designer.md
+../../agents/exercise-designer.md

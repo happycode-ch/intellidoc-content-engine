@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/content-atomizer.md
+../../agents/content-atomizer.md

@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/newsletter-curator.md
+../../agents/newsletter-curator.md

@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/topic-scout.md
+../../agents/topic-scout.md

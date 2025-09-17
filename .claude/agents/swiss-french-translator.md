@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/language_agents/swiss-french-translator.md
+../../agents/language_agents/swiss-french-translator.md

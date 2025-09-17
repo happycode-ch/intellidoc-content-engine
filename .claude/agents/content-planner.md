@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/content-planner.md
+../../agents/content-planner.md

@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/solution-provider.md
+../../agents/solution-provider.md

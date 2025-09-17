@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/orchestration/blog-post-orchestrator.md
+../../agents/orchestration/blog-post-orchestrator.md

@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/fact-verifier.md
+../../agents/fact-verifier.md

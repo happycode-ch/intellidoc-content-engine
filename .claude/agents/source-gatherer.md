@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/source-gatherer.md
+../../agents/source-gatherer.md

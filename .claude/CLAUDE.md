@@ -12,9 +12,11 @@ Sophisticated content creation system using 54 specialized agents (48 core + 6 S
 - **Orchestration**: `content-pipeline-orchestrator` for intelligent coordination
 
 ## Project Structure
-- `.claude/agents/` - Deployed agent definitions including orchestrator
-- `cc_content_creation_agents/` - Agent source files and development docs
-- `content/articles/` - Generated content output directory
+- **`agents/`** - Agent source files and development docs (single source of truth)
+- **`.claude/agents/`** - Deployed agent definitions (symlinks to agents/)
+- **`docs/`** - Comprehensive documentation and guides
+- **`scripts/`** - Utilities and automation scripts
+- **`content/`** - Generated content output directory
 
 ## 10-Phase Agent Pipeline
 **Phase 1**: Research & Discovery (5 agents)
@@ -28,7 +30,7 @@ Sophisticated content creation system using 54 specialized agents (48 core + 6 S
 **Phase 9**: Performance Analysis (3 agents)
 **Phase 10**: Swiss Localization (6 agents)
 
-→ See `cc_content_creation_agents/CLAUDE.md` for agent details
+→ See `agents/CLAUDE.md` for agent details
 
 ## Key Commands
 
@@ -113,6 +115,8 @@ Sophisticated content creation system using 54 specialized agents (48 core + 6 S
 
 
 ## Key Resources
-- **Agent Development**: See `cc_content_creation_agents/CLAUDE.md`
-- **Implementation Guide**: `IMPLEMENTATION_GUIDE_41_AGENTS.md`
+- **Agent Development**: See `agents/CLAUDE.md`
+- **Documentation Hub**: `docs/README.md`
+- **Model Optimization**: `docs/AGENT_MODEL_OPTIMIZATION_GUIDE.md`
+- **Scripts & Utilities**: `scripts/`
 - **Generated Content**: `content/articles/[date]-[topic]/`

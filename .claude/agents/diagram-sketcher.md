@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/diagram-sketcher.md
+../../agents/diagram-sketcher.md

@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/audience-profiler.md
+../../agents/audience-profiler.md

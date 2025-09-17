@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/orchestration/social-media-orchestrator.md
+../../agents/orchestration/social-media-orchestrator.md

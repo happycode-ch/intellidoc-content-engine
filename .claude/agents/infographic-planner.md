@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/infographic-planner.md
+../../agents/infographic-planner.md

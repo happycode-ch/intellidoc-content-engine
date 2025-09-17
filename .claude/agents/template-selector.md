@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/template-selector.md
+../../agents/template-selector.md

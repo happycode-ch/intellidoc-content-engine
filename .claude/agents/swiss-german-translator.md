@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/language_agents/swiss-german-translator.md
+../../agents/language_agents/swiss-german-translator.md

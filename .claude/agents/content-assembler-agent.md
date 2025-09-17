@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/orchestration/content-assembler-agent.md
+../../agents/orchestration/content-assembler-agent.md

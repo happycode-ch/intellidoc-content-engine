@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/grammar-checker.md
+../../agents/grammar-checker.md

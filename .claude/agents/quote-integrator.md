@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/quote-integrator.md
+../../agents/quote-integrator.md

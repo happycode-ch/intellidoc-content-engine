@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/keyword-researcher.md
+../../agents/keyword-researcher.md

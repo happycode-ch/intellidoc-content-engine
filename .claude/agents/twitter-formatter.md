@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/twitter-formatter.md
+../../agents/twitter-formatter.md

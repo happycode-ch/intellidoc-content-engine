@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/conclusion-writer.md
+../../agents/conclusion-writer.md

@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/competitor-analyzer.md
+../../agents/competitor-analyzer.md

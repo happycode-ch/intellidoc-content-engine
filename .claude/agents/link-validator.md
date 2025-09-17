@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/link-validator.md
+../../agents/link-validator.md

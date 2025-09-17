@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/orchestration/tutorial-orchestrator.md
+../../agents/orchestration/tutorial-orchestrator.md

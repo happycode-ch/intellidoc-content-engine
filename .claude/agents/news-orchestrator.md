@@ -1,1 +1,1 @@
-../../cc_content_creation_agents/orchestration/news-orchestrator.md
+../../agents/orchestration/news-orchestrator.md

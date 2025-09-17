@@ -1,60 +1,119 @@
-.docs/
+# IntelliDoc Content Engine - Git Ignore Configuration
 
-# Content directory - track structure only, not content
+# =====================================================
+# GENERATED CONTENT - Track structure only, not files
+# =====================================================
 content/**/*
 !content/
 !content/*/
 !content/**/.gitkeep
 
+# Archive directories
 .archive/
+
+# =====================================================
+# DEVELOPMENT ENVIRONMENT
+# =====================================================
+
+# IDE and Editor files
 .vscode/
-.DS_Store
-node_modules/
-dist/
-*.log
-.env
-*.tmp
-*.bak
 .idea/
 *.swp
 *.swo
-*.class
-*.pyc
-__pycache__/
-*.sqlite3
-*.db
+*~
+
+# VS Code
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# JetBrains IDEs
 *.iml
-*.out
-*.exe
-*.dll
-*.o
-*.obj
-*.so
-*.dylib
-*.lib
-*.pdb
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =====================================================
+# OPERATING SYSTEM FILES
+# =====================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =====================================================
+# TEMPORARY AND CACHE FILES
+# =====================================================
+
+# General temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
 *.log
-*.zip
-*.tar.gz
-*.rar
-*.7z
+*.cache
+
+# Backup files
+*~
+*.orig
+*.rej
+.#*
+
+# =====================================================
+# PROGRAMMING LANGUAGES
+# =====================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
+.installed.cfg
 *.egg
-*.egg/
-*.whl
-*.ipynb_checkpoints/
-*.coverage
-.coverage.*
-htmlcov/
-.tox/
-.nox/
-.pytest_cache/
-.mypy_cache/
-.dmypy.json
-.pyre/
-.pytype/
-cython_debug/
-.env/
+MANIFEST
+
+# Python virtual environments
+.env
+.env.*
 .venv/
 venv/
 ENV/
@@ -64,8 +123,65 @@ venv.bak/
 pip-log.txt
 pip-delete-this-directory.txt
 __pypackages__/
-*.pem
+
+# Python testing
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+htmlcov/
+.hypothesis/
+cython_debug/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+.node_repl_history
+*.tsbuildinfo
+.nyc_output
+
+# =====================================================
+# COMPILED AND BINARY FILES
+# =====================================================
+
+# General compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.obj
+*.so
+*.dylib
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# =====================================================
+# SECURITY AND CREDENTIALS
+# =====================================================
+
+# API keys and secrets
 *.key
+*.pem
 *.crt
 *.p12
 *.pfx
@@ -79,41 +195,90 @@ __pypackages__/
 *.csr
 *.ovpn
 *.kdbx
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-*.ncb
-*.aps
-*.pch
-*.pdb
-*.ipch
-*.tlogs
-*.lastbuildstate
-*.sdf
-*.cache
-*.dbmdl
-*.opendb
-*.VC.db
-*.VC.VC.opendb
-*.pidb
-*.svclog
-*.scc
-*.pfx
-*.publishsettings
-*.vspscc
-*.vssscc
-*.dbg
-*.jfm
-*.class
-*.war
-*.ear
-*.jar
-*.nar
-*.zip
-*.tar.gz
-*.rar
-*.7z
-*.log
-*.tmp
-*.bak
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Config files with sensitive data
+config.json
+secrets.json
+*.secret
+
+# =====================================================
+# DATABASE FILES
+# =====================================================
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+
+# =====================================================
+# BUILD AND DEPLOYMENT
+# =====================================================
+
+# Build outputs
+build/
+dist/
+out/
+target/
+
+# Package files
+*.deb
+*.rpm
+*.pkg
+*.dmg
+*.msi
+
+# Docker
+.dockerignore
+Dockerfile.prod
+
+# =====================================================
+# MISC PROJECT-SPECIFIC
+# =====================================================
+
+# LaTeX build files (for PDF generation)
+scripts/pdf-build/output/*.pdf
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.out
+*.nav
+*.snm
+*.vrb
+
+# Test outputs
+test-results/
+coverage/
+
+# =====================================================
+# EDITOR AND TOOL SPECIFIC
+# =====================================================
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =====================================================
+# END OF GITIGNORE
+# =====================================================
