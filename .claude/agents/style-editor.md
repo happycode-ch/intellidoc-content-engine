@@ -1,7 +1,7 @@
 ---
 name: style-editor
 description: Ensure brand voice consistency across content
-model: opus
+model: haiku
 tools: Read, Write
 ---
 

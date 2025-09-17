@@ -1,7 +1,7 @@
 ---
 name: angle-definer
 description: Determine unique perspective and approach for content
-model: opus
+model: sonnet
 tools: Read
 ---
 

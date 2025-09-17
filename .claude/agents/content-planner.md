@@ -1,7 +1,7 @@
 ---
 name: content-planner
 description: Create content calendar and prioritize topics
-model: opus
+model: sonnet
 tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: diagram-sketcher
 description: Create technical diagram specifications
-model: opus
+model: haiku
 tools: Read, Write
 ---
 

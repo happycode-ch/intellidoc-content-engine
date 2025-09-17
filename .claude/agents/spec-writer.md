@@ -1,7 +1,7 @@
 ---
 name: spec-writer
 description: Create detailed content specifications for writers
-model: opus
+model: sonnet
 tools: Read, Write
 ---
 

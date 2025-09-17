@@ -1,7 +1,7 @@
 ---
 name: step-sequencer
 description: Order learning steps progressively for tutorials
-model: opus
+model: haiku
 tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: infographic-planner
 description: Design infographic layouts and visual hierarchy
-model: opus
+model: haiku
 tools: Read, Write
 ---
 

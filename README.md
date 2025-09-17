@@ -1,5 +1,5 @@
 # IntelliDoc Content Engine
-### 41-Agent Content Creation Pipeline for Claude Code
+### 54-Agent Content Creation Pipeline for Claude Code (48 Core + 6 Swiss Localization)
 
 **🚧 Work in Progress** - This project is under active development
 
@@ -9,7 +9,7 @@
 
 ## ✨ What is the IntelliDoc Content Engine?
 
-The IntelliDoc Content Engine is a sophisticated content creation system developed by IntelliDoc, powered by 41 specialized Claude Code agents. Each agent masters a single aspect of content creation—from research and strategy to writing and distribution—delivering precision and quality that surpasses traditional approaches.
+The IntelliDoc Content Engine is a sophisticated content creation system developed by IntelliDoc, powered by 54 specialized Claude Code agents (48 core + 6 Swiss localization). Each agent masters a single aspect of content creation—from research and strategy to writing and distribution—delivering precision and quality that surpasses traditional approaches.
 
 **🎯 One Request, Complete Content Pipeline**
 Simply say *"Write a technical blog post about Docker"* and watch as specialized agents automatically research, plan, create, polish, and format your content across multiple platforms.
@@ -33,7 +33,7 @@ cp .claude/agents/*.md your-project/.claude/agents/
 # In Claude Code
 /agents
 ```
-You should see all 41 agents listed.
+You should see all 54 agents listed.
 
 ### 3. Create Your First Content
 ```
@@ -43,7 +43,7 @@ Claude Code automatically orchestrates the perfect combination of agents for you
 
 ---
 
-## 🎭 The 41 Specialists
+## 🎭 The 54 Specialists
 
 ### 📊 **Phase 1: Research & Discovery** *(5 agents)*
 - `topic-scout` - Discover trending topics
@@ -203,7 +203,7 @@ intellidoc-content-engine/
 ├── .claude/
 │   ├── CLAUDE.md                    # Project-level configuration
 │   └── agents/                      # Ready-to-use agent files (41 total)
-├── cc_native_41_subagnt_cntnt_creation/
+├── cc_content_creation_agents/
 │   ├── CLAUDE.md                    # Development guidelines
 │   ├── IMPLEMENTATION_GUIDE_41_AGENTS.md
 │   └── [agent source files]         # Original agent definitions
@@ -312,9 +312,9 @@ Combine agents for custom workflows:
 
 ## 📚 Documentation
 
-- **📖 Implementation Guide**: [`IMPLEMENTATION_GUIDE_41_AGENTS.md`](cc_native_41_subagnt_cntnt_creation/IMPLEMENTATION_GUIDE_41_AGENTS.md)
+- **📖 Implementation Guide**: [`IMPLEMENTATION_GUIDE_41_AGENTS.md`](.archive/IMPLEMENTATION_GUIDE_41_AGENTS.md)
 - **⚙️ Project Configuration**: [`.claude/CLAUDE.md`](.claude/CLAUDE.md)
-- **🔧 Development Guide**: [`cc_native_41_subagnt_cntnt_creation/CLAUDE.md`](cc_native_41_subagnt_cntnt_creation/CLAUDE.md)
+- **🔧 Development Guide**: [`cc_content_creation_agents/CLAUDE.md`](cc_content_creation_agents/CLAUDE.md)
 - **📄 PDF Export Guide**: [`pdf-build/README.md`](pdf-build/README.md)
 
 ---

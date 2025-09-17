@@ -1,7 +1,7 @@
 ---
 name: error-handler
 description: Document error scenarios and solutions
-model: opus
+model: sonnet
 tools: Read, Write
 ---
 

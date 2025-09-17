@@ -1,7 +1,7 @@
 ---
 name: concept-explainer
 description: Clarify complex technical concepts with analogies
-model: opus
+model: sonnet
 tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: intro-writer
 description: Craft compelling introductions that hook readers
-model: opus
+model: sonnet
 tools: Read, Write
 ---
 

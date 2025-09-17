@@ -1,7 +1,7 @@
 ---
 name: topic-scout
 description: PROACTIVELY identify trending topics and content opportunities from metrics feedback
-model: opus
+model: haiku
 tools: WebSearch, Read
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: fact-verifier
 description: Validate claims, statistics, and technical accuracy
-model: opus
+model: haiku
 tools: WebSearch, WebFetch
 ---
 

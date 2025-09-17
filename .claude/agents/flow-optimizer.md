@@ -1,7 +1,7 @@
 ---
 name: flow-optimizer
 description: Improve content structure and readability flow
-model: opus
+model: haiku
 tools: Read, Write
 ---
 

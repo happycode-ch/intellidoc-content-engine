@@ -1,7 +1,7 @@
 ---
 name: outline-builder
 description: Create structured content outlines from specifications
-model: opus
+model: sonnet
 tools: Read, Write
 ---
 

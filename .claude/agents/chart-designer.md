@@ -1,7 +1,7 @@
 ---
 name: chart-designer
 description: Specify data visualizations and chart types
-model: opus
+model: haiku
 tools: Read, Write
 ---
 

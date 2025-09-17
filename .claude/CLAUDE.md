@@ -1,22 +1,22 @@
 # IntelliDoc Content Engine
 
 ## Project Overview
-Sophisticated content creation system using 41 specialized agents organized in 9 phases. Orchestrated by `content-pipeline-orchestrator` for intelligent agent subset selection based on content type.
+Sophisticated content creation system using 54 specialized agents (48 core + 6 Swiss localization) organized in 10 phases. Orchestrated by `content-pipeline-orchestrator` for intelligent agent subset selection based on content type.
 
 ## Core Philosophy
 **Specialization over consolidation** - Each agent has single responsibility for precision and quality.
 
 ## Tech Stack
 - **Framework**: Claude Code native agents (YAML + Markdown)
-- **Models**: Haiku (29), Sonnet (11), Opus (2 - body-writer, orchestrator)
+- **Models**: Haiku (18), Sonnet (22), Opus (14 - orchestrators, core content, Swiss localization)
 - **Orchestration**: `content-pipeline-orchestrator` for intelligent coordination
 
 ## Project Structure
 - `.claude/agents/` - Deployed agent definitions including orchestrator
-- `cc_native_41_subagnt_cntnt_creation/` - Agent source files and development docs
+- `cc_content_creation_agents/` - Agent source files and development docs
 - `content/articles/` - Generated content output directory
 
-## 9-Phase Agent Pipeline
+## 10-Phase Agent Pipeline
 **Phase 1**: Research & Discovery (5 agents)
 **Phase 2**: Strategy & Planning (5 agents)
 **Phase 3**: Content Creation (5 agents)
@@ -26,8 +26,9 @@ Sophisticated content creation system using 41 specialized agents organized in 9
 **Phase 7**: Visual Creation (5 agents)
 **Phase 8**: Distribution (5 agents)
 **Phase 9**: Performance Analysis (3 agents)
+**Phase 10**: Swiss Localization (6 agents)
 
-→ See `cc_native_41_subagnt_cntnt_creation/CLAUDE.md` for agent details
+→ See `cc_content_creation_agents/CLAUDE.md` for agent details
 
 ## Key Commands
 
@@ -112,6 +113,6 @@ Sophisticated content creation system using 41 specialized agents organized in 9
 
 
 ## Key Resources
-- **Agent Development**: See `cc_native_41_subagnt_cntnt_creation/CLAUDE.md`
+- **Agent Development**: See `cc_content_creation_agents/CLAUDE.md`
 - **Implementation Guide**: `IMPLEMENTATION_GUIDE_41_AGENTS.md`
 - **Generated Content**: `content/articles/[date]-[topic]/`

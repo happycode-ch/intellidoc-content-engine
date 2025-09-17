@@ -1,7 +1,7 @@
 ---
 name: improvement-advisor
 description: Suggest content optimizations based on performance analysis
-model: opus
+model: sonnet
 tools: Read, Write
 ---
 

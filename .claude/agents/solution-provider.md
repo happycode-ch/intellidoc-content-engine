@@ -1,7 +1,7 @@
 ---
 name: solution-provider
 description: Write exercise solutions with explanations
-model: opus
+model: sonnet
 tools: Read, Write
 ---
 
