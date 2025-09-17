@@ -1,0 +1,65 @@
+{
+  "name": "intellidoc-content-engine",
+  "version": "1.0.0",
+  "description": "54-agent content creation system for Claude Code with Swiss localization",
+  "main": "index.js",
+  "bin": {
+    "intellidoc": "./bin/cli.js"
+  },
+  "files": [
+    "agents/**/*",
+    ".claude/agents/**/*",
+    "content/**/*",
+    "bin/**/*",
+    "scripts/**/*",
+    "docs/**/*",
+    "*.sh",
+    "swiss-*.json",
+    "*.md",
+    "!.archive/**/*",
+    "!node_modules/**/*",
+    "!.git/**/*"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/setup-agents.js",
+    "setup": "chmod +x scripts/content-management/*.sh && chmod +x scripts/development/*.sh",
+    "verify": "node scripts/development/verify-agents.js",
+    "clean": "node scripts/content-management/clean-content.js",
+    "test": "node test/package-test.js"
+  },
+  "keywords": [
+    "claude-code",
+    "agents",
+    "content-creation",
+    "ai",
+    "orchestration",
+    "swiss-localization",
+    "multilingual",
+    "blog-automation",
+    "tutorial-creation",
+    "technical-writing",
+    "content-pipeline",
+    "ai-orchestration"
+  ],
+  "author": "IntelliDoc <noreply@intellidoc.ch>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "peerDependencies": {
+    "@anthropic-ai/claude-code": ">=1.0.0"
+  },
+  "dependencies": {
+    "commander": "^9.4.0",
+    "fs-extra": "^11.1.0",
+    "yaml": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/happycode-ch/intellidoc-content-engine.git"
+  },
+  "homepage": "https://github.com/happycode-ch/intellidoc-content-engine#readme",
+  "bugs": {
+    "url": "https://github.com/happycode-ch/intellidoc-content-engine/issues"
+  }
+}

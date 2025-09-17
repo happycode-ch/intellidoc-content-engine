@@ -11,6 +11,9 @@ content/**/*
 # Archive directories
 .archive/
 
+# Development directories
+.docs/
+
 # =====================================================
 # DEVELOPMENT ENVIRONMENT
 # =====================================================
@@ -140,16 +143,23 @@ htmlcov/
 .hypothesis/
 cython_debug/
 
-# Node.js
+# Node.js & NPM
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+yarn.lock
 .npm
 .eslintcache
 .node_repl_history
 *.tsbuildinfo
 .nyc_output
+
+# NPM Package testing
+intellidoc-content-engine-*.tgz
+test-package/
+test-install/
 
 # =====================================================
 # COMPILED AND BINARY FILES

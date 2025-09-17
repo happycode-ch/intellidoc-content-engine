@@ -1,5 +1,5 @@
 # IntelliDoc Content Engine
-### 54-Agent Content Creation Pipeline for Claude Code (48 Core + 6 Swiss Localization)
+### 54-Agent Content Creation Pipeline for Claude Code (41 Core + 7 Orchestrators + 6 Swiss Localization)
 
 **🚧 Work in Progress** - This project is under active development
 
@@ -9,7 +9,7 @@
 
 ## ✨ What is the IntelliDoc Content Engine?
 
-The IntelliDoc Content Engine is a sophisticated content creation system developed by IntelliDoc, powered by 54 specialized Claude Code agents (48 core + 6 Swiss localization). Each agent masters a single aspect of content creation—from research and strategy to writing and distribution—delivering precision and quality that surpasses traditional approaches.
+The IntelliDoc Content Engine is a sophisticated content creation system developed by IntelliDoc, powered by 54 specialized Claude Code agents (41 core content + 7 orchestrators + 6 Swiss localization). Each agent masters a single aspect of content creation—from research and strategy to writing and distribution—delivering precision and quality that surpasses traditional approaches.
 
 **🎯 One Request, Complete Content Pipeline**
 Simply say *"Write a technical blog post about Docker"* and watch as specialized agents automatically research, plan, create, polish, and format your content across multiple platforms.
@@ -44,6 +44,15 @@ Claude Code automatically orchestrates the perfect combination of agents for you
 ---
 
 ## 🎭 The 54 Specialists
+
+### 🎯 **Orchestration Layer** *(7 orchestrator agents)*
+- `blog-post-orchestrator` - Orchestrate blog post creation
+- `tutorial-orchestrator` - Coordinate tutorial development
+- `news-orchestrator` - Manage rapid news articles
+- `social-media-orchestrator` - Transform content for social platforms
+- `whitepaper-orchestrator` - Direct white paper creation
+- `series-orchestrator` - Manage multi-part content series
+- `content-assembler` - Consolidate all content fragments
 
 ### 📊 **Phase 1: Research & Discovery** *(5 agents)*
 - `topic-scout` - Discover trending topics
@@ -104,6 +113,14 @@ Claude Code automatically orchestrates the perfect combination of agents for you
 - `trend-spotter` - Identify content trends
 - `improvement-advisor` - Recommend optimizations
 
+### 🇨🇭 **Phase 10: Swiss Localization** *(6 agents)*
+- `swiss-german-translator` - Translate to Swiss German (Schweizerdeutsch)
+- `swiss-french-translator` - Translate to Swiss French (français suisse)
+- `swiss-italian-translator` - Translate to Swiss Italian (italiano svizzero)
+- `swiss-language-verifier` - Verify linguistic accuracy
+- `swiss-compliance-checker` - Ensure Swiss standards
+- `swiss-localization-orchestrator` - Coordinate multilingual pipeline
+
 ---
 
 ## 🎪 Common Workflows
@@ -137,7 +154,7 @@ Claude Code automatically orchestrates the perfect combination of agents for you
 ## 🧠 The Philosophy
 
 ### **Specialization Over Consolidation**
-- ✅ 41 specialists doing one thing perfectly
+- ✅ 54 specialists doing one thing perfectly
 - ❌ 10 generalists doing many things adequately
 
 ### **Precision Over Speed**
@@ -179,14 +196,15 @@ Claude Code automatically orchestrates the perfect combination of agents for you
 ## ⚡ Performance
 
 ### **Execution Times**
-- **Quick article**: 2-3 minutes
-- **Technical blog post**: 5-10 minutes
-- **Comprehensive guide**: 15-20 minutes
+- **Quick article**: 5-8 minutes
+- **Technical blog post**: 8-15 minutes
+- **Comprehensive guide**: 20-30 minutes
 
 ### **Cost Optimization**
-- **29 Haiku agents** (low cost) for simple tasks
-- **11 Sonnet agents** (medium cost) for complex reasoning
-- **1 Opus agent** (high cost) for critical content generation
+- **18 Haiku agents** (low cost) for simple tasks
+- **20 Sonnet agents** (medium cost) for complex reasoning
+- **14 Opus agents** (high cost) for critical content generation and orchestration
+- **2 unspecified** (content-assembler, swiss-localization-orchestrator)
 
 ### **Quality Metrics**
 - **Precision**: HIGH (specialized agents)
@@ -317,7 +335,7 @@ Combine agents for custom workflows:
 - ✅ Review agent descriptions
 
 ### **Slow Execution**
-- ✅ Normal for 41-agent precision
+- ✅ Normal for 54-agent precision
 - ✅ Quality over speed by design
 - ✅ Results worth the wait
 
@@ -368,10 +386,10 @@ MIT License - see [`LICENSE`](LICENSE) file for details.
 
 > *"In the world of AI agents, a specialist who does one thing perfectly beats a generalist who does many things adequately."*
 
-The IntelliDoc Content Engine embodies this philosophy with 41 specialists working as an orchestra, each playing their instrument perfectly to create content that exceeds what any single agent could achieve.
+The IntelliDoc Content Engine embodies this philosophy with 54 specialists working as an orchestra, each playing their instrument perfectly to create content that exceeds what any single agent could achieve.
 
 **Ready to transform your content creation?** Start with the Quick Start guide above and experience the power of specialized AI collaboration.
 
 ---
 
-*🤖 Powered by Claude Code | 🎭 41 Specialized Agents | 🏢 Developed by IntelliDoc | 🚀 Ready to Deploy*
+*🤖 Powered by Claude Code | 🎭 54 Specialized Agents | 🏢 Developed by IntelliDoc | 🚀 Ready to Deploy*
