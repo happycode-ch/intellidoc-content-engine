@@ -40,4 +40,3 @@ Craft detailed, effective prompts for AI image generators like Midjourney and DA
 ## Constraints
 - MUST be specific and detailed
 - MUST avoid copyright issues
-- MUST match content tone
