@@ -1,0 +1,18 @@
+{
+  "thread": [
+    {
+      "tweet": 1,
+      "text": "🇨🇭 Switzerland has MORE nuclear bunkers than people (114% capacity)! 🏔️\n\nThey're prepared for everyone... plus tourists! 😅\n\nOther mind-blowing Swiss facts you didn't know you needed: 🧵",
+      "chars": 195,
+      "emojis": ["🇨🇭", "🏔️", "😅", "🧵"]
+    }
+  ],
+  "single_post": {
+    "text": "🇨🇭 Fun fact: Switzerland has nuclear bunkers for 114% of its population! 🏔️\n\nAlso: You're NEVER more than 16km from a lake (1,500+ lakes!) 🏞️\n\n🍫 19 lbs chocolate/person/year\n🗳️ Vote 4x yearly\n🟦 Square flag\n\n#Switzerland #FunFacts #Swiss",
+    "chars": 248,
+    "hashtags": ["#Switzerland", "#FunFacts", "#Swiss"],
+    "emojis": ["🇨🇭", "🏔️", "🏞️", "🍫", "🗳️", "🟦"]
+  },
+  "platform": "twitter",
+  "total_tweets": 1
+}

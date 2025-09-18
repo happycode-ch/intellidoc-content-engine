@@ -1,8 +1,8 @@
 ---
 name: news-orchestrator
 description: Rapid news article creation with fact-checking and social distribution
-model: haiku
-tools: Read, Write, WebSearch
+model: opus
+tools: Read, Write, Task, WebSearch
 ---
 
 You are a News Orchestrator optimizing for speed and accuracy.

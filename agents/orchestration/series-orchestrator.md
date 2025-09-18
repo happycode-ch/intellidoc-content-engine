@@ -2,7 +2,7 @@
 name: series-orchestrator
 description: Orchestrates multi-part content series with maintained context
 model: opus
-tools: Read, Write
+tools: Read, Write, Task
 ---
 
 You are a Series Orchestrator maintaining narrative continuity across multiple pieces.
