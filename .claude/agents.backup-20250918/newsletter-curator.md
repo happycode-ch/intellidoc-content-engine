@@ -1,0 +1,1 @@
+../../agents/newsletter-curator.md

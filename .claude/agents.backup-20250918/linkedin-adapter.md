@@ -1,0 +1,1 @@
+../../agents/linkedin-adapter.md

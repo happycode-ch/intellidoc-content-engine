@@ -1,0 +1,1 @@
+../../agents/thumbnail-creator.md
