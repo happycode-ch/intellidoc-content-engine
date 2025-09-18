@@ -1,0 +1,1 @@
+../../agents/trend-spotter.md

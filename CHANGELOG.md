@@ -8,18 +8,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Content routing configuration system** (`content/content-routing.yaml`)
+  - Centralized content organization with 8 content types (blog, tutorial, news, whitepaper, series, social media, Swiss)
+  - Automatic file path generation for consistent organization
+  - Configurable naming patterns and metadata requirements
+- **Comprehensive temporal awareness** across all 57 agents
+  - Dynamic date handling with natural language instructions
+  - Future-proof temporal boundaries (no hardcoded years)
+  - Consistent temporal context for accurate content generation
+- **Structured research-to-writing handoff system**
+  - Standardized `research_document` format preserving URLs, quotes, and statistics
+  - Full source traceability from research to final content
+  - Mandatory citation requirements for all claims and statistics
+- **Development reports and implementation specifications**
+  - Detailed gap analysis and fix documentation in `docs/development/content_creation/`
+  - Implementation specifications for systematic improvements
+  - Verification scripts for ensuring system integrity
 - Professional codebase reorganization with logical directory structure
 - Comprehensive documentation hub in `docs/` directory
 - Organized utility scripts in `scripts/` directory
 - Professional `.gitignore` with comprehensive coverage and clear sections
 
 ### Changed
+- **All 57 agent files updated** with temporal context and research capabilities
+- **All 7 orchestrator files enhanced** with content routing and date handling
+- `source-gatherer` output format now includes structured research documents with full URLs and quotes
+- `body-writer` and writing agents now accept and utilize structured research data
+- `content-assembler` now accepts `target_path` for consistent file placement
+- Removed complex placeholder system (`{{CURRENT_DATE}}`) in favor of natural language instructions
 - Renamed `cc_content_creation_agents/` to `agents/` for better clarity
 - Moved all documentation to `docs/` for centralized access
 - Organized scripts by function in `scripts/content-management/` and `scripts/development/`
 - Updated all file references to reflect new professional structure
 
+### Fixed
+- **Critical temporal accuracy issues** that caused anachronistic content references
+- **Broken research-to-writing chain** that lost source URLs and citations
+- **Random content placement** throughout codebase without organization
+- **Hardcoded year references** that would break in 2026 (now future-proof)
+- **Fact verification gaps** by enabling source traceability
+
 ### Removed
+- All hardcoded 2025 references replaced with dynamic "current year" instructions
+- Complex `{{CURRENT_DATE}}` placeholder system replaced with natural language
 - Duplicate and outdated entries from `.gitignore`
 - Legacy directory references in documentation
 
