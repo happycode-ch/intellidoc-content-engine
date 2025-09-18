@@ -117,6 +117,7 @@ Sophisticated content creation system using 54 specialized agents (48 core + 6 S
 ## Key Resources
 - **Agent Development**: See `agents/CLAUDE.md`
 - **Documentation Hub**: `docs/README.md`
+- **Development Reports**: `docs/development/content_creation/reports/` - System analysis and improvement reports
 - **Model Optimization**: `docs/AGENT_MODEL_OPTIMIZATION_GUIDE.md`
 - **Scripts & Utilities**: `scripts/`
 - **Generated Content**: `content/articles/[date]-[topic]/`
