@@ -1,0 +1,1 @@
+../../agents/orchestration/content-assembler-agent.md

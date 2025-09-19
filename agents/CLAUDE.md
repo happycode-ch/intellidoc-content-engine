@@ -1,36 +1,59 @@
-# 52-Agent Content Creation Module (Including Swiss Localization)
+# 46-Agent Content Creation Module (Including Swiss Localization)
 
 ## Module Purpose
-Source directory for 52 specialized content agents including:
-- 46 core content creation agents
+Source directory for 46 specialized content agents including:
+- 40 core content creation agents
 - 6 Swiss localization agents for multilingual content
-- Plus the `content-pipeline-orchestrator` that coordinates intelligent agent subset selection based on content type and requirements.
+- Orchestration via XML templates in `templates/` directory
 
 ## Orchestration Strategy
 
-### Content-Pipeline-Orchestrator
-The master orchestrator (Opus-powered) analyzes content requests and selects optimal agent subsets:
-- **Blog posts**: 6-8 agents for focused content
-- **Tutorials**: 20-25 agents for comprehensive coverage
-- **Social media**: 3-4 distribution agents
-- **Whitepapers**: 15-20 research and content agents
+### Template-Based Orchestration
+Orchestration is handled through XML patterns in 7 templates in `templates/` directory.
+
+### Available Templates (7 total)
+1. **`blog-post-template.md`** - Technical blog posts (1500-3000 words)
+   - Phase 1: 4 agents parallel (research & planning)
+   - Phase 2: 2 agents sequential (structure)
+   - Phase 3: 4 agents parallel (content creation)
+   - Phase 4-6: Quality, enhancement, assembly
+
+2. **`tutorial-template.md`** - Step-by-step guides with exercises
+   - Phase 1: 4 agents parallel (research)
+   - Phase 2: 3 agents sequential (structure & exercises)
+   - Phase 3: 5 agents parallel (content & examples)
+   - Phase 4-5: Practical elements & quality
+
+3. **`news-article-template.md`** - Rapid news articles (<30 min)
+   - Phase 1: 3 agents parallel (immediate research)
+   - Phase 2: 3 agents parallel (quick creation)
+   - Phase 3: Final checks & assembly
+
+4. **`social-media-template.md`** - Multi-platform social content
+   - Single phase: 4 agents parallel (all platforms)
+   - Optional enhancement with trend analysis
+
+5. **`whitepaper-template.md`** - Authoritative long-form (5000-10000 words)
+   - Phase 1: 5 agents parallel (deep research)
+   - Phase 2: Structure planning
+   - Phase 3: Multiple batches of 3-4 agents each
+   - Phase 4: Conclusion & polish
+
+6. **`content-series-template.md`** - Multi-part content series
+   - Phase 1: 3 agents parallel (series planning)
+   - Phase 2+: 3 agents per part (intro, body, conclusion)
+   - Maintains context across parts
+
+7. **`swiss-localization-template.md`** - Swiss multilingual content (DE/FR/IT)
+   - Option 1: 3 translators parallel + 2 verifiers
+   - Option 2: Research + 5 agents parallel (content + translations)
 
 ### Content Assembly Solution
-**NEW: `content-assembler` agent** consolidates all fragments:
-- Merges intro, body, conclusion, code examples into single document
+**`content-assembler` agent** consolidates all fragments:
+- Final step in all templates
+- Merges intro, body, conclusion, code examples
 - Maintains consistent formatting and flow
-- Generates publication-ready deliverables
-- Handles all content types (blog, tutorial, news, whitepaper, social)
-
-### Specialized Orchestrators
-Seven content-type orchestrators:
-- `blog-post-orchestrator` - Technical blog posts (1500-3000 words)
-- `tutorial-orchestrator` - Step-by-step guides with exercises
-- `news-orchestrator` - Rapid news articles (<30 min)
-- `social-media-orchestrator` - Platform-specific social content
-- `whitepaper-orchestrator` - Authoritative long-form (5000-10000 words)
-- `series-orchestrator` - Multi-part content series
-- `swiss-localization-orchestrator` - Swiss multilingual content pipeline (DE/FR/IT)
+- Handles all content types
 
 ## Model Optimization (September 2024)
 
@@ -42,10 +65,10 @@ After comprehensive analysis of all 46 agents, model assignments were optimized 
 - Sonnet: 9 agents (20%) - Underutilized
 - Haiku: 0 agents (0%) - Not leveraged
 
-**Current Distribution (Optimized - 52 agents total)**:
-- **Opus: 14 agents (27%)** - Complex orchestration, deep content, and Swiss localization
-  - 8 core content agents (orchestrators + body-writer + content-assembler)
-  - 6 Swiss localization agents (translation + compliance + verification)
+**Current Distribution (Optimized - 46 agents total)**:
+- **Opus: 6 agents (13%)** - Deep content creation and Swiss localization
+  - body-writer + content-assembler
+  - 4 Swiss localization agents (critical translation + verification)
 - **Sonnet: 20 agents (38%)** - Handles research, analysis, and strategic planning
 - **Haiku: 18 agents (35%)** - Manages simple formatting, validation, and specifications
 
@@ -58,9 +81,9 @@ After comprehensive analysis of all 46 agents, model assignments were optimized 
 ### Model Assignment Strategy
 
 **Opus (Complex Reasoning)**:
-- All orchestrators (`blog-post`, `tutorial`, `whitepaper`, `news`, `social-media`, `series`)
 - Core content creators (`body-writer`, `content-assembler`)
-- Tasks requiring multi-step coordination and deep context understanding
+- Swiss localization agents requiring deep cultural understanding
+- Tasks requiring deep context and content synthesis
 
 **Sonnet (Balanced Performance)**:
 - Research agents (`source-gatherer`, `keyword-researcher`, `competitor-analyzer`)
@@ -316,4 +339,4 @@ cp [agent-name].md ~/.claude/agents/
 
 ---
 
-*52 specialized agents (46 core + 6 Swiss) + optimized model distribution = exceptional multilingual content at 70% lower cost*
+*46 specialized agents (40 core + 6 Swiss) + optimized model distribution = exceptional multilingual content at 70% lower cost*

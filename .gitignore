@@ -11,6 +11,12 @@ content/**/*
 # Archive directories
 .archive/
 
+# Personal notes (not tracked)
+my-notes/**/*
+!my-notes/
+!my-notes/*/
+!my-notes/**/.gitkeep
+
 # Development directories
 .docs/
 
@@ -71,6 +77,11 @@ $RECYCLE.BIN/
 # =====================================================
 # TEMPORARY AND CACHE FILES
 # =====================================================
+
+# Temporary agent outputs (preserve structure and docs)
+temp_agent_outputs/*
+!temp_agent_outputs/.gitkeep
+!temp_agent_outputs/CLAUDE.md
 
 # General temporary files
 *.tmp
