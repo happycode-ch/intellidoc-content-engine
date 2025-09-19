@@ -1,3 +1,10 @@
+# File: scripts/pdf-build/metadata.yaml
+# Purpose: Configuration file
+# AI-hints:
+# - YAML configuration file
+# - Parsed by content routing system
+# - Defines project structure and settings
+
 # PDF Metadata Configuration
 # Professional book-quality settings for technical documentation
 

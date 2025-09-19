@@ -1,3 +1,11 @@
+# File: agents/language_agents/swiss-italian-translator.md
+# Purpose: Translate content to target languages
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: swiss-italian-translator
 description: Translate English content to Swiss Italian with Ticino localization

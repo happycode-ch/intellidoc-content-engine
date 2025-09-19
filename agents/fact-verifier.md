@@ -1,3 +1,11 @@
+# File: agents/fact-verifier.md
+# Purpose: Verify content accuracy and compliance
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: fact-verifier
 description: Validate claims, statistics, and technical accuracy

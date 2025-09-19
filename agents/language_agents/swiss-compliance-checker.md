@@ -1,3 +1,11 @@
+# File: agents/language_agents/swiss-compliance-checker.md
+# Purpose: Specialized agent for content creation pipeline
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: swiss-compliance-checker
 description: Ensure Swiss formatting, legal, and regulatory compliance across all content

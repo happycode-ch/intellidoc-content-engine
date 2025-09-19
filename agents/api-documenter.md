@@ -1,3 +1,11 @@
+# File: agents/api-documenter.md
+# Purpose: Specialized agent for content creation pipeline
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: api-documenter
 description: Write technical API documentation with examples

@@ -1,4 +1,12 @@
 #!/bin/bash
+# File: scripts/content-management/clean-content.sh
+# Purpose: Clean generated content and temporary files
+# Related: scripts/content-management/, scripts/CLAUDE.md
+# AI-hints:
+# - Side effects: File operations, directory changes
+# - Requires bash shell environment
+# - Part of project automation toolkit
+
 # Quick clean content directory without archiving (for testing)
 
 echo "=== Content Clean Utility ==="

@@ -1,3 +1,9 @@
+# File: scripts/pdf-build/cover-template.md
+# Purpose: Project file
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 ---
 title: "Your Document Title"
 subtitle: "Professional Subtitle Here"

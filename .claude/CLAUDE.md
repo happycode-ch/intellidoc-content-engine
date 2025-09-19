@@ -1,22 +1,99 @@
+# File: .claude/CLAUDE.md
+# Purpose: Navigation and documentation for .claude directory
+# Related: .claude/CLAUDE.md, CLAUDE.md
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 # IntelliDoc Content Engine
 
 ## Project Overview
-Sophisticated content creation system using 54 specialized agents (48 core + 6 Swiss localization) organized in 10 phases. Orchestrated by `content-pipeline-orchestrator` for intelligent agent subset selection based on content type.
+Sophisticated content creation system using 46 specialized agents (40 core + 6 Swiss localization) organized in 10 phases. Uses template-based workflows with direct parallel invocation for true multi-agent coordination.
 
 ## Core Philosophy
 **Specialization over consolidation** - Each agent has single responsibility for precision and quality.
 
 ## Tech Stack
 - **Framework**: Claude Code native agents (YAML + Markdown)
-- **Models**: Haiku (18), Sonnet (22), Opus (14 - orchestrators, core content, Swiss localization)
-- **Orchestration**: `content-pipeline-orchestrator` for intelligent coordination
+- **Models**: Haiku (18), Sonnet (20), Opus (6 - core content + Swiss localization)
+- **Orchestration**: Template-based workflows with direct parallel invocation
 
-## Project Structure
-- **`agents/`** - Agent source files and development docs (single source of truth)
-- **`.claude/agents/`** - Deployed agent definitions (symlinks to agents/)
-- **`docs/`** - Comprehensive documentation and guides
-- **`scripts/`** - Utilities and automation scripts
-- **`content/`** - Generated content output directory
+## Complete Project Structure
+```
+CODE/
+├── .claude/                    # Claude Code configuration
+│   ├── agents/                 # Deployed agents (symlinks)
+│   └── CLAUDE.md              # Main navigation hub (THIS FILE)
+├── agents/                     # Agent source files (46 total)
+│   ├── language_agents/        # Swiss localization (6)
+│   ├── orchestration/          # Content assembler only
+│   ├── prompts/               # Prompt templates
+│   └── CLAUDE.md              # Agent specifications
+├── templates/                  # XML workflow templates (7)
+│   └── CLAUDE.md              # Orchestration patterns
+├── content/                    # Generated content outputs
+│   ├── articles/              # Blog posts by date
+│   ├── sources/               # Research materials
+│   │   ├── internal/          # Internal sources
+│   │   └── external/          # External references
+│   └── CLAUDE.md              # Content organization
+├── scripts/                    # Automation utilities
+│   ├── content-management/     # Archive & setup scripts
+│   ├── development/           # Dev tools
+│   ├── pdf-build/             # PDF generation
+│   └── CLAUDE.md              # Script documentation
+├── .archive/                   # Timestamped backups
+│   ├── [YYYYMMDD-HHMMSS]/    # Archive snapshots
+│   └── CLAUDE.md              # Archive procedures
+├── docs/                       # Documentation
+│   ├── reports/               # White papers, analyses
+│   └── migration/             # Migration guides
+├── temp_agent_outputs/         # Intermediate agent outputs
+│   └── CLAUDE.md              # Output management guide
+└── CLAUDE.md                  # Root project overview
+```
+
+## CLAUDE.md Files Roadmap
+
+Navigate to specific documentation based on your needs:
+
+### Root Level
+- **`/CLAUDE.md`** - Project root overview, git operations, GitHub workflow
+  - Focus: High-level navigation, quick start, version control
+
+### Core Directories
+- **`agents/CLAUDE.md`** - 46 agent specifications and model assignments
+  - Focus: Agent details, model optimization, performance metrics
+
+- **`templates/CLAUDE.md`** - 7 XML workflow templates for content creation
+  - Focus: Orchestration patterns, XML structure, parallel execution
+
+- **`content/CLAUDE.md`** - Content output organization and generation
+  - Focus: Directory structure, naming conventions, workflow outputs
+
+- **`scripts/CLAUDE.md`** - Automation scripts and utilities
+  - Focus: Agent management, content operations, archive tools
+
+- **`.archive/CLAUDE.md`** - Timestamped backup system
+  - Focus: Archive structure, restoration procedures, backup management
+
+- **`temp_agent_outputs/CLAUDE.md`** - Intermediate agent output storage
+  - Focus: Temporary files, debugging workflows, cleanup procedures
+
+### This File
+- **`.claude/CLAUDE.md`** (You are here) - Main navigation hub
+  - Focus: Project overview, common operations, resource links
+
+## Quick Navigation Guide
+
+What do you need to do?
+
+- **Create content** → Go to `templates/CLAUDE.md`
+- **Find an agent** → Go to `agents/CLAUDE.md`
+- **Generate output** → Go to `content/CLAUDE.md`
+- **Run scripts** → Go to `scripts/CLAUDE.md`
+- **Restore backup** → Go to `.archive/CLAUDE.md`
+- **Git/GitHub** → Go to `/CLAUDE.md` (root)
 
 ## 10-Phase Agent Pipeline
 **Phase 1**: Research & Discovery (5 agents)
@@ -32,92 +109,185 @@ Sophisticated content creation system using 54 specialized agents (48 core + 6 S
 
 → See `agents/CLAUDE.md` for agent details
 
+## File Creation Requirements
+
+**IMPORTANT**: When creating ANY new file in this project, you MUST include standardized headers.
+
+### Header Template (Required for All New Files)
+```markdown
+# path/to/file.md
+**Purpose**: [Imperative verb + specific action, ≤80 chars]
+**Related**: [List related files or 'None']
+**AI-hints**:
+- [Key APIs/services used]
+- [Side effects if any]
+- [Important constraints]
+```
+
+### Header Rules
+1. **File path**: Must be repo-root-relative (e.g., `scripts/new-script.sh`)
+2. **Purpose**: Imperative mood, ≤80 characters (e.g., "Calculate NOI for rental properties")
+3. **Related**: List related files/docs; omit line if none
+4. **AI-hints**: 1-5 bullets covering:
+   - Key APIs or services called
+   - Side effects (DB writes, external calls)
+   - Important constraints or assumptions
+   - Props/params for components
+   - Export patterns
+
+### Example Headers
+
+#### For a Script
+```markdown
+# scripts/content-management/archive-all.sh
+**Purpose**: Archive and optionally clean project directories
+**Related**: .archive/CLAUDE.md, scripts/CLAUDE.md
+**AI-hints**:
+- Archives docs/, content/, scripts/, my-notes/ directories
+- Creates timestamped backups in .archive/
+- Interactive mode prompts for cleanup after archiving
+```
+
+#### For Documentation
+```markdown
+# docs/migration/new-feature.md
+**Purpose**: Document migration path for new feature implementation
+**Related**: agents/CLAUDE.md, templates/CLAUDE.md
+**AI-hints**:
+- Reference documentation only
+- No executable code
+- Links to related components
+```
+
 ## Key Commands
 
-### Content Creation with Specialized Orchestrators
+### Content Creation with Template-Based Workflows
 ```bash
-# Blog posts (with automatic assembly)
-/agent blog-post-orchestrator
-"Create a technical blog post about [topic]"
+# Blog posts - Use templates/blog-post-template.md
+# Copy template commands and customize for your topic
 
-# Tutorials (with exercises and solutions)
-/agent tutorial-orchestrator
-"Create a step-by-step tutorial on [topic]"
+# Tutorials - Use templates/tutorial-template.md
+# Step-by-step guides with exercises
 
-# Quick news articles
-/agent news-orchestrator
-"Breaking news about [event]"
+# News articles - Use templates/news-article-template.md
+# Rapid content for breaking news
 
-# Social media content
-/agent social-media-orchestrator
-"Create social posts from [existing article]"
+# Social media - Use templates/social-media-template.md
+# Multi-platform content packages
 
-# White papers
-/agent whitepaper-orchestrator
-"Create authoritative white paper on [topic]"
+# White papers - Use templates/whitepaper-template.md
+# Long-form authoritative content
 
-# Content series
-/agent series-orchestrator
-"Create 5-part series about [topic]"
+# Swiss localization - Use templates/swiss-localization-template.md
+# Translations and compliance for CH market
 
 # List all available agents
 /agents
+
+# Final assembly for any content type
+/agent content-assembler
+"Combine all outputs into final deliverable"
 ```
 
 
 ## Content Type Workflows
 
-### Blog Post (8-15 min)
-`blog-post-orchestrator` → research → content creation → `content-assembler` → final blog post
+### Blog Post (5-10 min with parallel execution)
+Template → parallel research (4 agents) → parallel writing (3-4 agents) → `content-assembler` → final blog post
 
-### Tutorial (20-30 min)
-`tutorial-orchestrator` → planning → interactive elements → `content-assembler` → complete guide
+### Tutorial (15-20 min)
+Template → parallel research → structured creation → exercises → `content-assembler` → complete guide
 
-### News Article (< 30 min)
-`news-orchestrator` → rapid research → quick creation → `content-assembler` → published article
+### News Article (5-10 min)
+Template → rapid parallel research (3 agents) → quick creation → `content-assembler` → published article
 
-### Social Media (3-5 min)
-`social-media-orchestrator` → content atomization → platform adaptation → `content-assembler` → multi-platform package
+### Social Media (2-3 min)
+Template → parallel platform creation (3-4 agents) → `content-assembler` → multi-platform package
 
-### White Paper (25-40 min)
-`whitepaper-orchestrator` → deep research → authority building → `content-assembler` → professional document
+### White Paper (20-30 min)
+Template → deep parallel research (5 agents) → batched content creation → `content-assembler` → professional document
 
-### Content Series (varies)
-`series-orchestrator` → per-part creation with `content-assembler` → series consistency → final packaging
+### Swiss Localization (5-10 min)
+Template → parallel translation (3 agents) → compliance check → verification → localized content
 
 
 ## Design Principles
 - **Single Responsibility**: Each agent does ONE thing perfectly
 - **Context Isolation**: Clean context prevents task contamination
 - **Minimal Tool Access**: Agents only get necessary permissions
-- **Orchestrated Execution**: `content-pipeline-orchestrator` coordinates workflow
+- **Parallel Execution**: Direct invocation enables true parallelization
 
 ## Performance Expectations
-- **Blog Post**: 8-15 minutes (optimized subset)
-- **Tutorial**: 20-30 minutes (comprehensive)
-- **Quick Article**: 5-8 minutes (minimal agents)
+- **Blog Post**: 5-10 minutes (parallel execution)
+- **Tutorial**: 15-20 minutes (comprehensive with exercises)
+- **Quick Article**: 5-10 minutes (rapid parallel research)
 - **Quality**: Professional-grade output through specialization
+- **Cost**: 70% reduction vs old orchestrator approach
 
 ## Troubleshooting
 - **Agent not found**: Check `.claude/agents/` directory
-- **Wrong output type**: Use `content-pipeline-orchestrator` for proper workflow
-- **Slow execution**: Orchestrator optimizes subset for content type
-- **Multiple files generated**: Normal - orchestrator manages consolidation
+- **Agents not parallel**: Explicitly state "invoke in parallel"
+- **Lost context**: Copy outputs between workflow phases
+- **Multiple files generated**: Normal - use content-assembler to consolidate
 
 ## Best Practices
-1. **Always use orchestrator** for content creation tasks
-2. **Specify content type** clearly (blog, tutorial, social)
-3. **Trust agent selection** - orchestrator optimizes for your needs
-4. **Review outputs** in `content/articles/` directory
+1. **Use templates** from `templates/` directory for workflows
+2. **Run agents in parallel** whenever tasks are independent
+3. **Use content-assembler** to consolidate all outputs
+4. **Review outputs** in `content/` or `temp_agent_outputs/` directories
 
 
 
+## Common Operations
 
+### Template Usage
+```bash
+# Copy template for blog post
+cat templates/blog-post-template.md
+
+# List all templates
+ls templates/*.md
+
+# Templates contain XML patterns for parallel execution
+```
+
+### Agent Operations
+```bash
+# Check deployed agents (should be 46)
+ls -la .claude/agents/*.md | grep -v CLAUDE | wc -l
+
+# Verify no orchestrators remain
+ls -la .claude/agents/ | grep orchestrator
+
+# List agent by category
+grep -l "model: haiku" .claude/agents/*.md | wc -l  # 18 agents
+grep -l "model: sonnet" .claude/agents/*.md | wc -l # 20 agents
+grep -l "model: opus" .claude/agents/*.md | wc -l   # 6 agents
+```
+
+### GitHub Workflow
+```bash
+# After making changes
+git add -A
+git commit -m "feat: update content engine"
+git push origin [branch]
+gh pr create --title "Update: [description]"
+```
 
 ## Key Resources
+- **Workflow Templates**: `templates/` - Ready-to-use content workflows
+- **Migration Guide**: `docs/migration/from-orchestrators-to-direct-invocation.md`
 - **Agent Development**: See `agents/CLAUDE.md`
 - **Documentation Hub**: `docs/README.md`
-- **Development Reports**: `docs/development/content_creation/reports/` - System analysis and improvement reports
+- **White Paper**: `docs/reports/claude-code-orchestration-white-paper.md`
 - **Model Optimization**: `docs/AGENT_MODEL_OPTIMIZATION_GUIDE.md`
 - **Scripts & Utilities**: `scripts/`
 - **Generated Content**: `content/articles/[date]-[topic]/`
+
+# important-instruction-reminders
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
+
+**CRITICAL**: Always add headers to new files as specified in the File Creation Requirements section above.

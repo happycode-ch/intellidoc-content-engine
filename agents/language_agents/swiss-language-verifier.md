@@ -1,3 +1,11 @@
+# File: agents/language_agents/swiss-language-verifier.md
+# Purpose: Verify content accuracy and compliance
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: swiss-language-verifier
 description: Verify linguistic accuracy for all three Swiss languages

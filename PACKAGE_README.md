@@ -1,3 +1,9 @@
+# File: PACKAGE_README.md
+# Purpose: Project file
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 # IntelliDoc Content Engine NPM Package
 
 ### 54-Agent Content Creation System for Claude Code

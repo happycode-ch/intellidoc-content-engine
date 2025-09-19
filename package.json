@@ -9,6 +9,7 @@
   "files": [
     "agents/**/*",
     ".claude/agents/**/*",
+    "templates/**/*",
     "content/**/*",
     "bin/**/*",
     "scripts/**/*",
@@ -17,6 +18,7 @@
     "swiss-*.json",
     "*.md",
     "!.archive/**/*",
+    "!my-notes/**/*",
     "!node_modules/**/*",
     "!.git/**/*"
   ],

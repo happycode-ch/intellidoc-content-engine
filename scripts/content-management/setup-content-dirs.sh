@@ -1,4 +1,12 @@
 #!/bin/bash
+# File: scripts/content-management/setup-content-dirs.sh
+# Purpose: Setup project directories and configuration
+# Related: scripts/content-management/, scripts/CLAUDE.md
+# AI-hints:
+# - Side effects: File operations, directory changes
+# - Requires bash shell environment
+# - Part of project automation toolkit
+
 # Setup clean content directory structure for IntelliDoc Content Engine
 
 echo "=== Setting up content directory structure ==="
@@ -6,6 +14,10 @@ echo "=== Setting up content directory structure ==="
 # Create main content type directories
 echo "Creating main content directories..."
 mkdir -p content/{blog,tutorials,news,whitepapers,series}
+
+# Create sources directories
+echo "Creating sources directories..."
+mkdir -p content/sources/{internal,external}
 
 # Create social media subdirectories
 echo "Creating social media directories..."
@@ -23,6 +35,8 @@ mkdir -p content/.archive
 echo "Adding .gitkeep files..."
 touch content/.gitkeep
 touch content/{blog,tutorials,news,whitepapers,series}/.gitkeep
+touch content/sources/.gitkeep
+touch content/sources/{internal,external}/.gitkeep
 touch content/social/.gitkeep
 touch content/social/{twitter,linkedin,instagram}/.gitkeep
 touch content/swiss/.gitkeep
@@ -39,6 +53,9 @@ echo "├── tutorials/         # Step-by-step guides"
 echo "├── news/              # News articles"
 echo "├── whitepapers/       # Long-form documents"
 echo "├── series/            # Multi-part content"
+echo "├── sources/           # Reference materials"
+echo "│   ├── internal/     # Internal documentation"
+echo "│   └── external/     # External references"
 echo "├── social/            # Social media posts"
 echo "│   ├── twitter/"
 echo "│   ├── linkedin/"

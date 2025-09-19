@@ -1,3 +1,11 @@
+# File: agents/code-example-writer.md
+# Purpose: Write content sections with context and evidence
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: code-example-writer
 description: Create working code snippets for technical articles

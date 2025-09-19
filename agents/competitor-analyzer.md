@@ -1,3 +1,11 @@
+# File: agents/competitor-analyzer.md
+# Purpose: Analyze content for quality and improvements
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: competitor-analyzer
 description: Analyze competing content to identify gaps and opportunities

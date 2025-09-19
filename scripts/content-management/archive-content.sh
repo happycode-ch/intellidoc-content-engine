@@ -1,4 +1,12 @@
 #!/bin/bash
+# File: scripts/content-management/archive-content.sh
+# Purpose: Archive and backup project content
+# Related: scripts/content-management/, scripts/CLAUDE.md
+# AI-hints:
+# - Side effects: File operations, directory changes
+# - Requires bash shell environment
+# - Part of project automation toolkit
+
 # Archive all content to timestamped folder
 
 echo "=== Content Archive System ==="
