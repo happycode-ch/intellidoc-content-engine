@@ -1,3 +1,11 @@
+# File: templates/content-series-template.md
+# Purpose: Template for multi-part content series
+# Related: agents/, templates/CLAUDE.md
+# AI-hints:
+# - XML workflow pattern for parallel execution
+# - Orchestrates multiple agents in phases
+# - Direct invocation replaces orchestrator agents
+
 # Content Series Template
 
 ## Overview

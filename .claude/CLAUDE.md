@@ -1,3 +1,10 @@
+# File: .claude/CLAUDE.md
+# Purpose: Navigation and documentation for .claude directory
+# Related: .claude/CLAUDE.md, CLAUDE.md
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 # IntelliDoc Content Engine
 
 ## Project Overview
@@ -101,6 +108,56 @@ What do you need to do?
 **Phase 10**: Swiss Localization (6 agents)
 
 → See `agents/CLAUDE.md` for agent details
+
+## File Creation Requirements
+
+**IMPORTANT**: When creating ANY new file in this project, you MUST include standardized headers.
+
+### Header Template (Required for All New Files)
+```markdown
+# path/to/file.md
+**Purpose**: [Imperative verb + specific action, ≤80 chars]
+**Related**: [List related files or 'None']
+**AI-hints**:
+- [Key APIs/services used]
+- [Side effects if any]
+- [Important constraints]
+```
+
+### Header Rules
+1. **File path**: Must be repo-root-relative (e.g., `scripts/new-script.sh`)
+2. **Purpose**: Imperative mood, ≤80 characters (e.g., "Calculate NOI for rental properties")
+3. **Related**: List related files/docs; omit line if none
+4. **AI-hints**: 1-5 bullets covering:
+   - Key APIs or services called
+   - Side effects (DB writes, external calls)
+   - Important constraints or assumptions
+   - Props/params for components
+   - Export patterns
+
+### Example Headers
+
+#### For a Script
+```markdown
+# scripts/content-management/archive-all.sh
+**Purpose**: Archive and optionally clean project directories
+**Related**: .archive/CLAUDE.md, scripts/CLAUDE.md
+**AI-hints**:
+- Archives docs/, content/, scripts/, my-notes/ directories
+- Creates timestamped backups in .archive/
+- Interactive mode prompts for cleanup after archiving
+```
+
+#### For Documentation
+```markdown
+# docs/migration/new-feature.md
+**Purpose**: Document migration path for new feature implementation
+**Related**: agents/CLAUDE.md, templates/CLAUDE.md
+**AI-hints**:
+- Reference documentation only
+- No executable code
+- Links to related components
+```
 
 ## Key Commands
 
@@ -227,13 +284,10 @@ gh pr create --title "Update: [description]"
 - **Scripts & Utilities**: `scripts/`
 - **Generated Content**: `content/articles/[date]-[topic]/`
 
-#### Header Rules
-1. **File path**: Must be repo-root-relative and updated if file moves
-2. **Purpose**: Imperative mood, ≤80 characters (e.g., "Calculate NOI for rental properties")
-3. **Related**: List related files/docs; omit line if none
-4. **AI-hints**: 1-5 bullets covering:
-   - Key APIs or services called
-   - Side effects (DB writes, external calls)
-   - Important constraints or assumptions
-   - Props/params for components
-   - Export patterns
+# important-instruction-reminders
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
+
+**CRITICAL**: Always add headers to new files as specified in the File Creation Requirements section above.

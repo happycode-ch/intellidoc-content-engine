@@ -1,3 +1,10 @@
+# File: scripts/pdf-build/metadata-template.yaml
+# Purpose: Configuration file
+# AI-hints:
+# - YAML configuration file
+# - Parsed by content routing system
+# - Defines project structure and settings
+
 # Dynamic PDF Metadata Template
 # Variables will be replaced at build time from markdown front matter or command line
 

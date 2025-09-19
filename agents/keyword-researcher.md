@@ -1,3 +1,11 @@
+# File: agents/keyword-researcher.md
+# Purpose: Research and gather information for content
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: keyword-researcher
 description: Identify SEO keywords and search opportunities

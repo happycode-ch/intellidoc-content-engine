@@ -1,3 +1,11 @@
+# File: agents/CLAUDE.md
+# Purpose: Agent system documentation and specifications
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 # 46-Agent Content Creation Module (Including Swiss Localization)
 
 ## Module Purpose

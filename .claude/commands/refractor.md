@@ -1,3 +1,9 @@
+# File: .claude/commands/refractor.md
+# Purpose: Project file
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 ---
 description: Refactor code following best practices and design patterns
 ---

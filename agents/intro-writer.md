@@ -1,3 +1,11 @@
+# File: agents/intro-writer.md
+# Purpose: Write content sections with context and evidence
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: intro-writer
 description: Craft compelling introductions that hook readers

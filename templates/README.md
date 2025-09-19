@@ -1,3 +1,11 @@
+# File: templates/README.md
+# Purpose: Content creation workflow template
+# Related: agents/, templates/CLAUDE.md
+# AI-hints:
+# - XML workflow pattern for parallel execution
+# - Orchestrates multiple agents in phases
+# - Direct invocation replaces orchestrator agents
+
 # Workflow Templates - Using XML for Parallel Agent Execution
 
 ## The XML Pattern

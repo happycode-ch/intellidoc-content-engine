@@ -1,3 +1,9 @@
+# File: README.md
+# Purpose: Primary documentation for the project
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 # IntelliDoc Content Engine
 ### Template-Based Multi-Agent Content System (46 Specialized Agents)
 

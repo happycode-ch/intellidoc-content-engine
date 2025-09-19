@@ -1,3 +1,9 @@
+# File: CHANGELOG.md
+# Purpose: Track project changes and version history
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 # Changelog
 
 All notable changes to the IntelliDoc Content Engine will be documented in this file.
@@ -6,6 +12,39 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+### Added
+- **File Header Requirements in CLAUDE.md Files** (2025-09-19)
+  - Added explicit file creation requirements to `/CLAUDE.md` and `.claude/CLAUDE.md`
+  - Created `important-instruction-reminders` section with header template
+  - Moved header rules to prominent position (line 105 in .claude/CLAUDE.md)
+  - Added concrete examples for scripts and documentation headers
+  - Ensures Claude Code will automatically add headers to new files
+
+- **Standardized File Headers Across Project** (2025-09-19)
+  - Created `scripts/development/add-headers.sh` script for automated header addition
+  - Added standardized headers to 168 project files (.md, .sh, .yaml)
+  - Headers include: File path, Purpose, Related files, AI-hints
+  - Contextual header generation based on file type and location
+  - Safety features: Backup creation, dry-run mode, test mode
+  - Skips files with existing headers (8 files already had headers)
+  - Backup preserved in `.archive/headers-backup-20250919-150858/`
+  - Improves AI understanding and navigation throughout codebase
+
+- **NPM Package Script Support** (2025-09-19)
+  - Created `scripts/development/verify-agents.js` - Node.js agent verification script
+  - Created `scripts/content-management/clean-content.js` - Node.js wrapper for clean-content.sh
+  - Restored NPM package functionality referenced in package.json
+  - Verify script validates: 47 deployed agents, symlink integrity, model distribution
+  - Clean script provides Node.js compatibility for shell script execution
+
+### Verified
+- **Agent Deployment Integrity** (2025-09-19)
+  - Confirmed 47 agents correctly deployed in `.claude/agents/`
+  - All symlinks valid and pointing to correct source files
+  - Model distribution verified: 9 Opus, 24 Sonnet, 14 Haiku
+  - Critical agents present: content-assembler, body-writer, source-gatherer, keyword-researcher
+  - Source directory contains 50 files (includes 2 prompt templates, 1 README)
 
 ### Changed
 - **README.md Complete Rewrite** (2025-09-19)
@@ -33,6 +72,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Both scripts were artifacts from previous architecture with orchestrator pattern
   - Current system uses template-based workflows with agents in `agents/` directory
   - Removal cleans up codebase from obsolete tooling
+
+- **Obsolete Migration Scripts** (2025-09-19)
+  - Removed `scripts/add-temporal-context.sh` - Already applied to all agents
+  - Removed `scripts/fix-temporal-hardcoding.sh` - Temporal fixes already implemented
+  - Removed `scripts/update-orchestrator-handoff.sh` - References non-existent orchestrators
+  - Removed `scripts/add-path-configuration.sh` - For old orchestrator system
+  - Removed 6 test PDF files from `scripts/pdf-build/output/`
+  - Scripts were from September 18, 2025 migration to fix orchestrator issues
 
 ### Added
 - **Template-Based Orchestration System** (replaces non-functional orchestrator agents)

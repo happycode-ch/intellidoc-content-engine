@@ -1,3 +1,10 @@
+# File: scripts/pdf-build/metadata-clean.yaml
+# Purpose: Configuration file
+# AI-hints:
+# - YAML configuration file
+# - Parsed by content routing system
+# - Defines project structure and settings
+
 # Ultra-clean PDF Metadata - No header/footer customization
 # Lets Eisvogel handle all header/footer logic
 

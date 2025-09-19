@@ -1,3 +1,11 @@
+# File: agents/exercise-designer.md
+# Purpose: Specialized agent for content creation pipeline
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: exercise-designer
 description: Create practice problems for tutorials

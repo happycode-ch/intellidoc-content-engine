@@ -1,3 +1,11 @@
+# File: agents/README.md
+# Purpose: Specialized agent for content creation pipeline
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 # IntelliDoc Content Engine - Agent System
 
 This directory contains the complete collection of 54 specialized agents that power the IntelliDoc Content Engine. Each agent is designed for a single, specific responsibility to ensure precision and quality.

@@ -1,3 +1,11 @@
+# File: agents/step-sequencer.md
+# Purpose: Specialized agent for content creation pipeline
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: step-sequencer
 description: Order learning steps progressively for tutorials

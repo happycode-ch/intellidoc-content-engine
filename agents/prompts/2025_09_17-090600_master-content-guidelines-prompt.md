@@ -1,3 +1,11 @@
+# File: agents/prompts/2025_09_17-090600_master-content-guidelines-prompt.md
+# Purpose: Specialized agent for content creation pipeline
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 # CONTENT CREATION DIRECTIVE
 
 ## CRITICAL QUALITY STANDARDS - READ FIRST

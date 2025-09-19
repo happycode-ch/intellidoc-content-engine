@@ -1,3 +1,10 @@
+# File: scripts/CLAUDE.md
+# Purpose: Navigation and documentation for scripts directory
+# Related: .claude/CLAUDE.md, CLAUDE.md
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 # Automation Scripts
 
 ## Purpose

@@ -1,3 +1,9 @@
+# File: .claude/commands/ultrathink.md
+# Purpose: Project file
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 ## Usage
 
 `/ultrathink <TASK_DESCRIPTION>`

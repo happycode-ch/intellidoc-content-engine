@@ -1,3 +1,11 @@
+# File: agents/source-gatherer.md
+# Purpose: Specialized agent for content creation pipeline
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: source-gatherer
 description: Collect authoritative sources and references for content topics

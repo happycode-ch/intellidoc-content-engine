@@ -1,4 +1,12 @@
 #!/bin/bash
+# File: scripts/pdf-build/export-any.sh
+# Purpose: Utility script for project operations
+# Related: scripts/CLAUDE.md
+# AI-hints:
+# - Side effects: File operations, directory changes
+# - Requires bash shell environment
+# - Part of project automation toolkit
+
 
 # Universal PDF Export Script
 # Converts any markdown document to professional PDF with smart metadata extraction

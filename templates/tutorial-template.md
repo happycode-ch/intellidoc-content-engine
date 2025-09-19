@@ -1,3 +1,11 @@
+# File: templates/tutorial-template.md
+# Purpose: Template for step-by-step tutorials with exercises
+# Related: agents/, templates/CLAUDE.md
+# AI-hints:
+# - XML workflow pattern for parallel execution
+# - Orchestrates multiple agents in phases
+# - Direct invocation replaces orchestrator agents
+
 # Tutorial Creation Template
 
 ## Overview

@@ -1,3 +1,11 @@
+# File: agents/twitter-formatter.md
+# Purpose: Format content for specific platforms
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: twitter-formatter
 description: Create Twitter/X threads from content

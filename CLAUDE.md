@@ -1,3 +1,10 @@
+# File: CLAUDE.md
+# Purpose: Navigation and documentation for . directory
+# Related: .claude/CLAUDE.md
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 # IntelliDoc Content Engine
 
 ## Project Overview
@@ -104,3 +111,28 @@ cp -r .archive/[YYYYMMDD-HHMMSS]/* .
 - my-notes/ for personal notes (not tracked by git)
 - .archive/ contains timestamped backups
 - Always create PR when work complete
+
+# important-instruction-reminders
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
+
+## File Header Requirements
+ALWAYS add these headers when creating ANY new file:
+
+```markdown
+# path/to/file.md
+**Purpose**: [Imperative verb + specific action, ≤80 chars]
+**Related**: [List related files or 'None']
+**AI-hints**:
+- [Key APIs/services used]
+- [Side effects if any]
+- [Important constraints]
+```
+
+Header rules:
+1. **File path**: Must be repo-root-relative and updated if file moves
+2. **Purpose**: Imperative mood, ≤80 characters (e.g., "Calculate NOI for rental properties")
+3. **Related**: List related files/docs; omit line if none
+4. **AI-hints**: 1-5 bullets covering key implementation details

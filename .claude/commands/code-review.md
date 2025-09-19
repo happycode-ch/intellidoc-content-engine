@@ -1,3 +1,9 @@
+# File: .claude/commands/code-review.md
+# Purpose: Project file
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 ---
 allowed-tools: Bash(git diff:*), Bash(git log:*)
 description: Perform a comprehensive code review of recent changes

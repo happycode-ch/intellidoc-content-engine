@@ -1,3 +1,11 @@
+# File: agents/orchestration/content-assembler-agent.md
+# Purpose: Consolidate content fragments into final output
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: content-assembler
 description: Consolidates all content fragments from pipeline agents into final polished deliverable

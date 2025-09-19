@@ -1,3 +1,11 @@
+# File: templates/news-article-template.md
+# Purpose: Template for rapid news article creation
+# Related: agents/, templates/CLAUDE.md
+# AI-hints:
+# - XML workflow pattern for parallel execution
+# - Orchestrates multiple agents in phases
+# - Direct invocation replaces orchestrator agents
+
 # News Article Template
 
 ## Overview

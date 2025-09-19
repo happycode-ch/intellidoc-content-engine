@@ -1,4 +1,12 @@
 #!/bin/bash
+# File: scripts/content-management/setup-content-dirs.sh
+# Purpose: Setup project directories and configuration
+# Related: scripts/content-management/, scripts/CLAUDE.md
+# AI-hints:
+# - Side effects: File operations, directory changes
+# - Requires bash shell environment
+# - Part of project automation toolkit
+
 # Setup clean content directory structure for IntelliDoc Content Engine
 
 echo "=== Setting up content directory structure ==="

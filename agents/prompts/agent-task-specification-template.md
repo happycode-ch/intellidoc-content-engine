@@ -1,3 +1,11 @@
+# File: agents/prompts/agent-task-specification-template.md
+# Purpose: Specialized agent for content creation pipeline
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 # AGENT TASK SPECIFICATION TEMPLATE
 
 ## TEMPLATE OVERVIEW

@@ -1,3 +1,11 @@
+# File: agents/conclusion-writer.md
+# Purpose: Write content sections with context and evidence
+# Related: agents/CLAUDE.md, templates/
+# AI-hints:
+# - Agent configuration with model and tools
+# - Single responsibility principle enforced
+# - Part of 46-agent content creation system
+
 ---
 name: conclusion-writer
 description: Create effective closings with clear calls-to-action

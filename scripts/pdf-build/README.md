@@ -1,3 +1,9 @@
+# File: scripts/pdf-build/README.md
+# Purpose: Primary documentation for the project
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 # Professional PDF Generation System
 
 A production-ready system for converting Markdown documentation to beautifully formatted PDFs with professional book-quality typography, syntax highlighting, and layout.

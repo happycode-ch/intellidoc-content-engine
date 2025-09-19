@@ -1,4 +1,12 @@
 #!/bin/bash
+# File: scripts/pdf-build/build.sh
+# Purpose: Utility script for project operations
+# Related: scripts/CLAUDE.md
+# AI-hints:
+# - Side effects: File operations, directory changes
+# - Requires bash shell environment
+# - Part of project automation toolkit
+
 
 # Professional PDF Build Script
 # Automated PDF generation with dependency checking and optimization

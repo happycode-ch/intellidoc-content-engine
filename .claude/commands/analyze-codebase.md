@@ -1,3 +1,9 @@
+# File: .claude/commands/analyze-codebase.md
+# Purpose: Project file
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 ---
 allowed-tools: Bash(find:*), Bash(ls:*), Bash(tree:*), Bash(grep:*), Bash(wc:*), Bash(du:*), Bash(head:*), Bash(tail:*), Bash(cat:*), Bash(touch:*)
 description: Generate comprehensive analysis and documentation of entire codebase

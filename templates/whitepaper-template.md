@@ -1,3 +1,11 @@
+# File: templates/whitepaper-template.md
+# Purpose: Template for long-form authoritative content
+# Related: agents/, templates/CLAUDE.md
+# AI-hints:
+# - XML workflow pattern for parallel execution
+# - Orchestrates multiple agents in phases
+# - Direct invocation replaces orchestrator agents
+
 # Whitepaper Creation Template
 
 ## Overview

@@ -1,4 +1,12 @@
 #!/bin/bash
+# File: scripts/content-management/archive-all.sh
+# Purpose: Archive and backup project content
+# Related: scripts/content-management/, scripts/CLAUDE.md
+# AI-hints:
+# - Side effects: File operations, directory changes
+# - Requires bash shell environment
+# - Part of project automation toolkit
+
 # Archive docs, content, scripts, and my-notes to root .archive directory
 # Note: Scripts are archived but NEVER cleaned (infrastructure must remain)
 

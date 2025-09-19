@@ -1,3 +1,10 @@
+# File: scripts/pdf-build/metadata-simple.yaml
+# Purpose: Configuration file
+# AI-hints:
+# - YAML configuration file
+# - Parsed by content routing system
+# - Defines project structure and settings
+
 # Simplified PDF Metadata - No header conflicts
 # Clean configuration without overlapping elements
 

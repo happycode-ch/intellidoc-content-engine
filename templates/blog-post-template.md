@@ -1,3 +1,11 @@
+# File: templates/blog-post-template.md
+# Purpose: Template for creating blog posts with parallel agents
+# Related: agents/, templates/CLAUDE.md
+# AI-hints:
+# - XML workflow pattern for parallel execution
+# - Orchestrates multiple agents in phases
+# - Direct invocation replaces orchestrator agents
+
 # Blog Post Creation Template
 
 ## Overview

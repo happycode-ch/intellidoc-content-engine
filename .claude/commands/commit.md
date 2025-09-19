@@ -1,3 +1,9 @@
+# File: .claude/commands/commit.md
+# Purpose: Project file
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 # Commit Command
 
 This slash command is a Git commit helper that:

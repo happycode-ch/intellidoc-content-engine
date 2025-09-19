@@ -1,3 +1,9 @@
+# File: .claude/commands/update-claudemd.md
+# Purpose: Project file
+# AI-hints:
+# - Markdown documentation file
+# - Part of distributed documentation system
+
 ---
 allowed-tools: Bash(git diff:*), Bash(git log:*), Bash(git status:*), Bash(find:*), Bash(grep:*), Bash(wc:*), Bash(ls:*)
 description: Automatically update CLAUDE.md file based on recent code changes
