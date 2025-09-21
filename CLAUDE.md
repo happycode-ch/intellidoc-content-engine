@@ -10,9 +10,19 @@
 ## Project Overview
 Multi-agent content creation system with 46 specialized agents using template-based parallel workflows.
 
+## ⚠️ V1 System Preserved
+**Version**: v1.0.0-agent-system | **Tag**: `v1.0.0-agent-system` | **Branch**: `preserve/v1-agent-system`
+
+The current v1 agent system has been preserved for migration to v2 orchestration architecture:
+- **Frozen Snapshot**: `v1-frozen/` - Complete immutable copy
+- **Archive Backup**: `.archive/v1-complete-20250921-083632/`
+- **Rollback Script**: `scripts/rollback-to-v1.sh`
+- **Documentation**: `docs/v1-system-documentation.md`
+
 ## Directory Structure
 ```
 CODE/
+├── v1-frozen/          # PRESERVED: V1 system snapshot (DO NOT MODIFY)
 ├── agents/             # 46 content creation agents (source of truth)
 ├── .claude/agents/     # Deployed agents (symlinks)
 ├── templates/          # XML workflow templates
